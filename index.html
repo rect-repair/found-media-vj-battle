@@ -37,13 +37,6 @@
 
       <!-- Center: Tetris-style HUD -->
       <aside class="hud" aria-label="Battle HUD">
-        <div class="outer hud__outer">
-          <div class="hud__round-box">
-            <div class="inner hud__inner">
-              <span id="round-label" class="hud__round-text">Round 1</span>
-            </div>
-          </div>
-        </div>
 
         <nav class="hud__nav" aria-label="Round navigation">
           <div class="outer hud__outer">
@@ -52,11 +45,9 @@
             </div>
           </div>
           <div class="outer hud__outer">
-            <div class="hud__timer-bar" aria-hidden="true">
+            <div class="hud__round-box">
               <div class="inner hud__inner">
-                <div class="hud__timer-num">
-                  <span id="round-index">01</span>
-                </div>
+                <span class="hud__round-text" id="round-label">Round 1</span>
               </div>
             </div>
           </div>
@@ -98,7 +89,7 @@
         <div class="hud__meters" aria-hidden="true">
           <div class="outer hud__outer" id="meter-red">
             <div class="hud__border">
-              <div class=" hud__meter hud__meter--red"></div>
+              <div class="hud__meter hud__meter--red"></div>
             </div>
           </div>
           <div class="outer hud__outer" id="meter-blue">

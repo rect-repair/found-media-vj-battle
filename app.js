@@ -8,7 +8,7 @@
 
   const el = {
     roundLabel: document.getElementById("round-label"),
-    roundIndex: document.getElementById("round-index"),
+    // roundIndex: document.getElementById("round-index"),
     redName: document.getElementById("red-vj-name"),
     blueName: document.getElementById("blue-vj-name"),
     redDiary: document.getElementById("red-diary"),
@@ -58,8 +58,10 @@
     current = index;
     const isFinal = index === rounds.length - 1;
 
-    el.roundLabel.textContent = isFinal ? "Final Round" : r.label;
-    el.roundIndex.textContent = pad(r.round);
+    el.roundLabel.textContent = isFinal ? "Round 12" : r.label;
+    // el.roundLabel.textContent = pad(r.label);
+
+    // el.roundIndex.textContent = pad(r.round);
     // el.redRoundNum.textContent = String(r.round);
     // el.blueRoundNum.textContent = String(r.round);
 
@@ -68,12 +70,12 @@
     el.redScore.textContent = String(red_score[index]);
     el.blueScore.textContent = String(blue_score[index]);
 
-    console.log(el.roundIndex.textContent, el.redScore.textContent)
+    // console.log(el.roundIndex.textContent, el.redScore.textContent)
 
-    const red_progress = (red_score[index]) * 20;
-    const blue_progress = (blue_score[index]) * 20;
-    el.meterRed.style.height = `${Math.min(300, 45 + red_progress)}%`;
-    el.meterBlue.style.height = `${Math.min(300, 45 + blue_progress)}%`;
+    const red_progress = (red_score[index]) * 30;
+    const blue_progress = (blue_score[index]) * 30;
+    el.meterRed.style.height = `${Math.min(300, 50 + red_progress)}%`;
+    el.meterBlue.style.height = `${Math.min(300, 50 + blue_progress)}%`;
 
     el.redName.textContent = r.red.name;
     el.blueName.textContent = r.blue.name;
