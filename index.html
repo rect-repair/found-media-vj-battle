@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOUND VIDEO VJ BATTLE ROYALE — Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="battle-screen" role="application" aria-label="VJ Battle Royale archive">
+    <!-- Left: Red team diary panel -->
+    <section class="panel panel--red" aria-label="Red team diary">
+      <div class="panel__screen panel__screen--green">
+        <header class="panel__label panel__label--red">RED</header>
+        <div class="panel__meta">
+          <span id="red-vj-name" class="panel__vj-name">—</span>
+        </div>
+        <div id="red-diary" class="panel__diary" tabindex="0"></div>
+      </div>
+    </section>
+
+    <!-- Center: Tetris-style HUD -->
+    <aside class="hud" aria-label="Battle HUD">
+      <div class="hud__round-box">
+        <span id="round-label" class="hud__round-text">Round 1</span>
+      </div>
+
+      <div class="hud__timer-bar" aria-hidden="true">
+        <span id="round-index" class="hud__timer-num">01</span>
+      </div>
+
+      <div class="hud__scores">
+        <div class="hud__score hud__score--red">
+          <span class="hud__team">Red</span>
+          <span id="red-round-num" class="hud__points">1</span>
+        </div>
+        <div class="hud__score hud__score--blue">
+          <span class="hud__team">Blue</span>
+          <span id="blue-round-num" class="hud__points">1</span>
+        </div>
+      </div>
+
+      <h1 class="hud__title" aria-label="Found Video VJ Battle Royale">
+        <span class="hud__title-line">ROUND</span>
+        <span class="hud__title-line">VIDEO</span>
+        <span class="hud__title-line hud__title-line--vj">VJ</span>
+        <span class="hud__title-line">BATTLE</span>
+        <span class="hud__title-line hud__title-line--sm">ROYALE</span>
+      </h1>
+
+      <div class="hud__meters" aria-hidden="true">
+        <div class="hud__meter hud__meter--red" id="meter-red"></div>
+        <div class="hud__meter hud__meter--blue" id="meter-blue"></div>
+      </div>
+
+      <nav class="hud__nav" aria-label="Round navigation">
+        <button type="button" id="btn-prev" class="hud__btn" aria-label="Previous round">◀</button>
+        <button type="button" id="btn-next" class="hud__btn" aria-label="Next round">▶</button>
+      </nav>
+
+      <p class="hud__venue">UFO TERMINAL · 2026.4.26</p>
+    </aside>
+
+    <!-- Right: Blue team diary panel -->
+    <section class="panel panel--blue" aria-label="Blue team diary">
+      <div class="panel__screen panel__screen--green">
+        <header class="panel__label panel__label--blue">BLUE</header>
+        <div class="panel__meta">
+          <span id="blue-vj-name" class="panel__vj-name">—</span>
+        </div>
+        <div id="blue-diary" class="panel__diary" tabindex="0"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>24 VJs · 12 rounds · archived battle diaries</p>
+    <p class="site-footer__hint">← → arrow keys to change round</p>
+  </footer>
+
+  <script src="data/rounds.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
