@@ -4,9 +4,9 @@
 
   const el = {
     roundLabel: document.getElementById("round-label"),
-    roundIndex: document.getElementById("round-index"),
-    redRoundNum: document.getElementById("red-round-num"),
-    blueRoundNum: document.getElementById("blue-round-num"),
+    roundTimer: document.getElementById("round-timer"),
+    redScore: document.getElementById("red-score"),
+    blueScore: document.getElementById("blue-score"),
     redName: document.getElementById("red-vj-name"),
     blueName: document.getElementById("blue-vj-name"),
     redDiary: document.getElementById("red-diary"),
@@ -17,8 +17,24 @@
     btnNext: document.getElementById("btn-next"),
   };
 
-  function pad(n) {
+  function pad2(n) {
     return String(n).padStart(2, "0");
+  }
+
+  function formatTimer(round) {
+    return `00:${pad2(round)}`;
+  }
+
+  function setDiary(nameEl, diaryEl, entry) {
+    const hasName = entry.name && entry.name !== "—" && !entry.name.startsWith("Red VJ") && !entry.name.startsWith("Blue VJ");
+    if (hasName) {
+      nameEl.textContent = entry.name;
+      nameEl.hidden = false;
+      diaryEl.textContent = entry.diary;
+    } else {
+      nameEl.hidden = true;
+      diaryEl.textContent = entry.diary;
+    }
   }
 
   function render(index) {
@@ -29,19 +45,17 @@
     const isFinal = index === rounds.length - 1;
 
     el.roundLabel.textContent = isFinal ? "Final Round" : r.label;
-    el.roundIndex.textContent = pad(r.round);
-    el.redRoundNum.textContent = String(r.round);
-    el.blueRoundNum.textContent = String(r.round);
+    el.roundTimer.textContent = formatTimer(r.round);
+    el.redScore.textContent = String(r.round);
+    el.blueScore.textContent = String(r.round);
 
-    el.redName.textContent = r.red.name;
-    el.blueName.textContent = r.blue.name;
-    el.redDiary.textContent = r.red.diary;
-    el.blueDiary.textContent = r.blue.diary;
+    setDiary(el.redName, el.redDiary, r.red);
+    setDiary(el.blueName, el.blueDiary, r.blue);
 
-    /* Decorative “power meters” — taller as rounds progress */
-    const progress = ((index + 1) / rounds.length) * 100;
-    el.meterRed.style.height = `${Math.min(100, 40 + progress * 0.5)}%`;
-    el.meterBlue.style.height = `${Math.min(100, 25 + progress * 0.75)}%`;
+    /* Full meters like reference; slight asymmetry by round */
+    const t = (index + 1) / rounds.length;
+    el.meterRed.style.height = `${Math.round(55 + t * 45)}%`;
+    el.meterBlue.style.height = `${Math.round(40 + t * 55)}%`;
 
     el.btnPrev.disabled = index === 0;
     el.btnNext.disabled = index === rounds.length - 1;
