@@ -237,16 +237,18 @@ body {
 }
 
 .hud__scores {
-  display: grid;
+  display: flex;
   /* width: 2rem; */
   margin: 0 1.35rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .hud__score {
   border: var(--gray-border);
-  padding: 0.5rem 0 0.5rem 0rem;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  width: 3.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -353,7 +355,7 @@ body {
   width: 1.8rem;
   border: var(--gray-border);
   height: 100%;
-  min-height: 1rem;
+  width: 3.5rem;
   transition: height 0.25s steps(4);
 }
 
