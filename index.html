@@ -27,8 +27,27 @@
             <div class="panel__content">
               <div id="red-diary" class="panel__diary" tabindex="0"></div>
               <div class="video-wrapper" id="red-video-wrapper">
-                <iframe class="youtube-embed" src="https://player.vimeo.com/video/716561763" title="hello"
-                  allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div class="channel">
+                  <p class="channel__title" id="red-ch-title"></p>
+                  <iframe id="red-video" class="youtube-embed" src="" title="Red VJ clip"
+                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
+                    allowfullscreen></iframe>
+                  <div class="channel__switcher" id="red-channel">
+                    <div class="outer channel__btn-outer">
+                      <div class="channel__btn-border">
+                        <button type="button" id="red-ch-prev" class="channel__btn"
+                          aria-label="Previous clip">◀</button>
+                      </div>
+                    </div>
+                    <span class="channel__label">VID <span id="red-ch-num">01</span>/<span
+                        id="red-ch-total">01</span></span>
+                    <div class="outer channel__btn-outer">
+                      <div class="channel__btn-border">
+                        <button type="button" id="red-ch-next" class="channel__btn" aria-label="Next clip">▶</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -112,8 +131,27 @@
             <div class="panel__content">
               <div id="blue-diary" class="panel__diary" tabindex="0"></div>
               <div class="video-wrapper" id="blue-video-wrapper">
-                <iframe class="youtube-embed" src="https://player.vimeo.com/video/" title="hello"
-                  allow="autoplay; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div class="channel">
+                  <p class="channel__title" id="blue-ch-title"></p>
+                  <iframe id="blue-video" class="youtube-embed" src="" title="Blue VJ clip"
+                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
+                    allowfullscreen></iframe>
+                  <div class="channel__switcher" id="blue-channel">
+                    <div class="outer channel__btn-outer">
+                      <div class="channel__btn-border">
+                        <button type="button" id="blue-ch-prev" class="channel__btn"
+                          aria-label="Previous clip">◀</button>
+                      </div>
+                    </div>
+                    <span class="channel__label">VID <span id="blue-ch-num">01</span>/<span
+                        id="blue-ch-total">01</span></span>
+                    <div class="outer channel__btn-outer">
+                      <div class="channel__btn-border">
+                        <button type="button" id="blue-ch-next" class="channel__btn" aria-label="Next clip">▶</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
