@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script> -->
   <script src="p5.js"></script>
   <link rel="stylesheet" href="styles.css" />
@@ -29,9 +30,16 @@
               <div class="video-wrapper" id="red-video-wrapper">
                 <div class="channel">
                   <p class="channel__title" id="red-ch-title"></p>
-                  <iframe id="red-video" class="youtube-embed" src="" title="Red VJ clip"
-                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
-                    allowfullscreen></iframe>
+                  <div class="vid-shell" id="red-vid-shell">
+                    <iframe id="red-video" class="youtube-embed" src="" title="Red VJ clip"
+                      allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
+                      allowfullscreen></iframe>
+                    <div class="vid-ctrl" id="red-vid-ctrl" hidden>
+                      <button class="vid-ctrl__btn vid-ctrl__play" id="red-vid-play" type="button" aria-label="Play/Pause">▶</button>
+                      <div class="vid-ctrl__bar" id="red-vid-bar"><div class="vid-ctrl__bar-fill" id="red-vid-fill"></div></div>
+                      <button class="vid-ctrl__btn vid-ctrl__fs" id="red-vid-fs" type="button" aria-label="Fullscreen">⛶</button>
+                    </div>
+                  </div>
                   <div class="channel__switcher" id="red-channel">
                     <div class="outer channel__btn-outer">
                       <div class="channel__btn-border">
@@ -133,9 +141,16 @@
               <div class="video-wrapper" id="blue-video-wrapper">
                 <div class="channel">
                   <p class="channel__title" id="blue-ch-title"></p>
-                  <iframe id="blue-video" class="youtube-embed" src="" title="Blue VJ clip"
-                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
-                    allowfullscreen></iframe>
+                  <div class="vid-shell" id="blue-vid-shell">
+                    <iframe id="blue-video" class="youtube-embed" src="" title="Blue VJ clip"
+                      allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
+                      allowfullscreen></iframe>
+                    <div class="vid-ctrl" id="blue-vid-ctrl" hidden>
+                      <button class="vid-ctrl__btn vid-ctrl__play" id="blue-vid-play" type="button" aria-label="Play/Pause">▶</button>
+                      <div class="vid-ctrl__bar" id="blue-vid-bar"><div class="vid-ctrl__bar-fill" id="blue-vid-fill"></div></div>
+                      <button class="vid-ctrl__btn vid-ctrl__fs" id="blue-vid-fs" type="button" aria-label="Fullscreen">⛶</button>
+                    </div>
+                  </div>
                   <div class="channel__switcher" id="blue-channel">
                     <div class="outer channel__btn-outer">
                       <div class="channel__btn-border">
@@ -166,6 +181,7 @@
     </footer>
 
   </div>
+
   <script src="sketch.js"></script>
   <script src="data/rounds.js"></script>
   <script src="app.js"></script>
