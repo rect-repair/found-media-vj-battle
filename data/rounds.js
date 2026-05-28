@@ -45,11 +45,9 @@ Command+数字切换 = 切换到对应标签，直接按数字对应到视频的
     },
     blue: {
       name: "John Brumley",
-      diary: `John Brumley
+      diary: `It feels like I've been slowly preparing for an event like this for the past 15 years. Far back in the late 00s, I spent most of my time gathering VHS tapes from thrift stores in order to play back any strange audio on my radio show on KDVS in Davis, CA. This quickly shifted into finding strange and disposable videos online. I discovered the joys of algorithmic rabbit-holes and getting deeply lost in YouTube recommended videos. For a brief moment, the network of related-videos was deterministic, and if you could remember a single video in a linked chain, you could access the entire related network built around that video.
 
-It feels like I've been slowly preparing for an event like this for the past 15 years. Far back in the late 00s, I spent most of my time gathering VHS tapes from thrift stores in order to play back any strange audio on my radio show on KDVS in Davis, CA. This quickly shifted into finding strange and disposable videos online. I discovered the joys of algorithmic rabbit-holes and getting deeply lost in YouTube recommended videos. For a brief moment, the network of related-videos was deterministic, and if you could remember a single video in a linked chain, you could access the entire related network built around that video.
-
-Maybe influenced by early embedded YouTube DJ sites I started to build websites around embedded YouTube videos. Some were meant to be more sculptural embeddings, but I also wanted to build sites that could help for creating loops, sequences, and other effects that I could use in generating performances using streaming data. I had built out a bunch of sites that could be used to perform with, but had only actually used while putting together album material.
+Maybe influenced by [early embedded YouTube DJ sites](http://twoyoutubevideosandamotherfuckingcrossfader.com/) I started to build websites around embedded YouTube videos. Some were meant to be more sculptural embeddings ([1](https://www.youtube.com/watch?v=Jr8vH4E4P-4), [2](https://www.youtube.com/watch?v=y2X7hAgR4jI), [3](https://www.youtube.com/watch?v=kLQ64IkooUs), [4](https://www.youtube.com/watch?v=AdgBRAISQ64)), but I also wanted to build sites that could help for creating loops, sequences, and other effects that I could use in generating performances using streaming data ([1](https://www.youtube.com/watch?v=tdedUbqxxiU), [2](https://www.youtube.com/watch?v=uEyrC0R_ZwM)). I had built out a bunch of sites that could be used to perform with, but had only actually used while putting together [album material](https://bradgrammar.bandcamp.com/track/rayon-life).
 
 So for this event, I wanted to return to some of these old sites to see if I could update an early YouTube looping/sequencing webpage to actually perform with. The original sequencer was built using standard HTML radio and toggle buttons, and eventually the later versions focused on creating loops around particular keyframes within a YouTube video. The updated site combined the original sequencing with the ability to select keyframes at particular points in a YouTube video.
 
@@ -360,7 +358,7 @@ Search List:
   {
     round: 6,
     label: "Round 6",
-    red: { name: "Wenwen", diary: `…`, videos: [] },
+    red: { name: "Wenwen", diary: `（正在写了！！`, videos: [] },
     blue: {
       name: "Archy",
       diary: `理念大概是「无意识」和「自我消解」。
