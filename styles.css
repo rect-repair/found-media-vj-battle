@@ -10,23 +10,23 @@
   --blue: #0000ff;
   --yellow: #ffff00;
   --white: #ffffff;
-  --border: 3px solid var(--white);
+  --border: 0.1875rem solid var(--white);
   --gray-border: 0.2rem solid var(--gray);
   --pixel: "Press Start 2P", "Courier New", monospace;
-  --outline: 0 -1px 0 #000,
-    0 1px 0 #000,
-    0 2px 0 #000,
-    -1px 0 0 #000,
-    -1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    1px 1px 0 #000,
-    2px 1px 0 #000,
-    2px 2px 0 #000,
-    2px 0 0 #000,
-    3px 0 0 #000,
-    3px 1px 0 #000,
-    3px 2px 0 #000;
+  --outline: 0 -0.0625rem 0 #000,
+    0 0.0625rem 0 #000,
+    0 0.125rem 0 #000,
+    -0.0625rem 0 0 #000,
+    -0.0625rem 0.0625rem 0 #000,
+    -0.0625rem -0.0625rem 0 #000,
+    0.0625rem -0.0625rem 0 #000,
+    0.0625rem 0.0625rem 0 #000,
+    0.125rem 0.0625rem 0 #000,
+    0.125rem 0.125rem 0 #000,
+    0.125rem 0 0 #000,
+    0.1875rem 0 0 #000,
+    0.1875rem 0.0625rem 0 #000,
+    0.1875rem 0.125rem 0 #000;
 }
 
 *,
@@ -37,6 +37,10 @@
 
 a {
   color: var(--yellow);
+}
+
+html {
+  font-size: 175%;
 }
 
 html,
@@ -163,7 +167,7 @@ body {
 }
 
 .panel__diary::-webkit-scrollbar {
-  width: 8px;
+  width: 0.5rem;
 }
 
 .panel__diary::-webkit-scrollbar-thumb {
@@ -256,7 +260,7 @@ body {
 .diary-code pre {
   margin: 0.6rem 0 0;
   background: #000;
-  border: 1px solid var(--gray);
+  border: 0.0625rem solid var(--gray);
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 11rem;
@@ -270,7 +274,7 @@ body {
   display: block;
   padding: 0.6rem 0.7rem;
   font-family: "Menlo", "Monaco", "Courier New", monospace;
-  font-size: 8px;
+  font-size: 0.5rem;
   line-height: 1.5;
   white-space: pre-wrap;
   word-break: break-word;
@@ -470,23 +474,23 @@ body {
 
 .vid-ctrl__bar {
   flex: 1 1 auto;
-  height: 3px;
+  height: 0.1875rem;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   position: relative;
-  border-radius: 1px;
-  min-width: 30px;
+  border-radius: 0.0625rem;
+  min-width: 1.875rem;
 }
 
 .vid-ctrl__bar:hover {
-  height: 5px;
+  height: 0.3125rem;
 }
 
 .vid-ctrl__bar-fill {
   height: 100%;
   background: #fff;
   width: 0%;
-  border-radius: 1px;
+  border-radius: 0.0625rem;
   pointer-events: none;
 }
 
@@ -722,11 +726,11 @@ body {
   font-size: 1.2rem;
   color: #959595;
   text-shadow:
-    2px 0 0 #0b0038,
-    -2px 0 0 #0b0038,
-    0 2px 0 #0b0038,
-    0 -2px 0 #0b0038,
-    2px 2px 0 #0b0038;
+    0.125rem 0 0 #0b0038,
+    -0.125rem 0 0 #0b0038,
+    0 0.125rem 0 #0b0038,
+    0 -0.125rem 0 #0b0038,
+    0.125rem 0.125rem 0 #0b0038;
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
