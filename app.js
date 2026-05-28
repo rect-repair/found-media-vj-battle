@@ -351,6 +351,7 @@
       state.playBtn.textContent = "▶";
 
       state.player = new window.YT.Player(side + "-video", {
+        host: "https://www.youtube-nocookie.com",
         videoId: clip.id,
         playerVars,
         events: {

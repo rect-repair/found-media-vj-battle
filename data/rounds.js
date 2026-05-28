@@ -45,15 +45,74 @@ Command+数字切换 = 切换到对应标签，直接按数字对应到视频的
     },
     blue: {
       name: "John Brumley",
-      diary: `Paste the blue-side diary for round 1 here.`,
-      videos: [],
+      diary: `John Brumley
+
+It feels like I've been slowly preparing for an event like this for the past 15 years. Far back in the late 00s, I spent most of my time gathering VHS tapes from thrift stores in order to play back any strange audio on my radio show on KDVS in Davis, CA. This quickly shifted into finding strange and disposable videos online. I discovered the joys of algorithmic rabbit-holes and getting deeply lost in YouTube recommended videos. For a brief moment, the network of related-videos was deterministic, and if you could remember a single video in a linked chain, you could access the entire related network built around that video.
+
+Maybe influenced by early embedded YouTube DJ sites I started to build websites around embedded YouTube videos. Some were meant to be more sculptural embeddings, but I also wanted to build sites that could help for creating loops, sequences, and other effects that I could use in generating performances using streaming data. I had built out a bunch of sites that could be used to perform with, but had only actually used while putting together album material.
+
+So for this event, I wanted to return to some of these old sites to see if I could update an early YouTube looping/sequencing webpage to actually perform with. The original sequencer was built using standard HTML radio and toggle buttons, and eventually the later versions focused on creating loops around particular keyframes within a YouTube video. The updated site combined the original sequencing with the ability to select keyframes at particular points in a YouTube video.
+
+Most of the other additions were for ease in performing during the VJ Battle. A pop-out player could be full-screen while still controlling the sequence from the main page. Keyframes, settings, and sessions could be returned to and shared via URL, and I could also manually manipulate the video playback with keyboard keys.
+
+You can view and try out the [VJ Battle session here](https://johnbrumley.info/yt-seq/#q=eyJ2IjoiZWpndm1wYTNlSjQiLCJiIjoxMjAsImQiOjEsImwiOjQsInMiOlsxNi45MjgsNjQuNjM2LDEzMy43NzMsMTk4LjgxOCxudWxsLG51bGwsbnVsbCxudWxsXSwicCI6W3siaWQiOjE3NzcwMjE4ODkxMzIsInZpZGVvSWQiOiJxVnNqZXZXdUxpdyIsInRpdGxlIjoiSU1HIDc4NzgiLCJicG0iOjEyMCwic3RlcERpdiI6MC41LCJzZXFMZW4iOjgsInN0ZXBzIjpbeyJ0aW1lIjozNy42OSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjozNy42OSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjozNy42OSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxMy4zNTgsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTMuMzU4LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjM1LjM5MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjozNS4zOTMsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MjAuNTA0LCJlbmFibGVkIjp0cnVlfV19LHsiaWQiOjE3NzcwMjMyMTAzNzYsInZpZGVvSWQiOiJlamd2bXBhM2VKNCIsInRpdGxlIjoiQWNjb3JkaW9uLCBHdWl0YXIsIFlvZGVsaW5nIC0gV2hlbiBJIFdhcyBIdW5ncnkgTG9yZCBZb3UgRmVkIE1lIiwiYnBtIjoxMjAsInN0ZXBEaXYiOjEsInNlcUxlbiI6NCwic3RlcHMiOlt7InRpbWUiOjE2LjkyOCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo2NC42MzYsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTMzLjc3MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxOTguODE4LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjAsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjAsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjAsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjAsImVuYWJsZWQiOmZhbHNlfV19LHsiaWQiOjE3NzcwMjM4MTEzMjgsInZpZGVvSWQiOiJvZjNWTWJBdWVUNCIsInRpdGxlIjoiUGjDoXQgw6JtIHRp4bq/bmcgQW5oIGdp4buNbmcgTeG7uS0gNy1UcuG6p24gVGhp4buHbiBUw7luZy5EQVQiLCJicG0iOjEyNSwic3RlcERpdiI6MSwic2VxTGVuIjo4LCJzdGVwcyI6W3sidGltZSI6NTQuNTg1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjYzLjI0NywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyMC4yMTIsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTYuMjI0LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjEwLjQ1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjIuMiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo2LjYsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MzcuMzk4LCJlbmFibGVkIjp0cnVlfV19LHsiaWQiOjE3NzcwMjQyMDA5NTYsInZpZGVvSWQiOiJIZEVXSzFTU21GWSIsInRpdGxlIjoiVHJhbnF1aWwgTW9tZW50c8KuIFNsZWVwIFNvdW5kIFRoZXJhcHkgU3lzdGVtIiwiYnBtIjoxMjYsInN0ZXBEaXYiOjEsInNlcUxlbiI6OCwic3RlcHMiOlt7InRpbWUiOjQ3LjkzNSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Ny45MzUsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NDcuOTM1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQ3LjkzNSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Ny45MzUsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NDcuOTM1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQ3LjkzNSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Ny45MzUsImVuYWJsZWQiOnRydWV9XX0seyJpZCI6MTc3NzA5MTIyODk1OSwidmlkZW9JZCI6IkJFYVo0YTRIYjJJIiwidGl0bGUiOiJRVUJFIENpbmNpbm5hdGkgLSBTd29yZHF1ZXN0IiwiYnBtIjoxMjAsInN0ZXBEaXYiOjIsInNlcUxlbiI6OCwic3RlcHMiOlt7InRpbWUiOjUzLjY2NSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0MTIuMzcsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NTMuNjY1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjU3OS4wMTMsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NDguMDE2LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjM3NS42NTIsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MzkuNTQyLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQ0My40MzksImVuYWJsZWQiOnRydWV9XX0seyJpZCI6MTc3NzA5MTg1NjczOSwidmlkZW9JZCI6InNEZ3Y1WXk2THVJIiwidGl0bGUiOiJJTUcgMDExNyIsImJwbSI6MTIwLCJzdGVwRGl2IjoyLCJzZXFMZW4iOjgsInN0ZXBzIjpbeyJ0aW1lIjowLjIyMiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyLjAyNiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0LjA1MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo2LjU1NCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo4LjgzNCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxMS42MiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxNC40NywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxOC41MjMsImVuYWJsZWQiOnRydWV9XX0seyJpZCI6MTc3NzA5MjE0NDE4OCwidmlkZW9JZCI6Imx3am9YQTVjWFFjIiwidGl0bGUiOiJUaXBhIHRoZSBBbnQgLyBTa3VkcmnFhmEgVGlwYSAoMTk3NikgLSBBbnNpcyBCxJNyemnFhsWhIFtIUSAxMDgwcF0iLCJicG0iOjEyMCwic3RlcERpdiI6NCwic2VxTGVuIjo4LCJzdGVwcyI6W3sidGltZSI6NzQuMzc4LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjEwNi4yNTQsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTU5LjM4MSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyNDYuODM2LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjI5NC4yNDEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MzU2LjM1OSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0MTIuNzU1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQ3NC4wNTUsImVuYWJsZWQiOnRydWV9XX0seyJpZCI6MTc3NzA5MjYzNzc2MywidmlkZW9JZCI6Ik9MY3VveGtsVEpvIiwidGl0bGUiOiJUaGUgU3BpcmFsIERlbW8gLSBSZXNpc3RhbmNlIC0gU2VnYSBNZWdhZHJpdmUgRGVtbyIsImJwbSI6MTIwLCJzdGVwRGl2IjoxLCJzZXFMZW4iOjgsInN0ZXBzIjpbeyJ0aW1lIjo2NC43MjEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6Mi43ODQsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjMuMTMyLCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjoxMTUuNTI0LCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjoxMTIuNzQsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTIwLjM5NSwiZW5hYmxlZCI6ZmFsc2V9LHsidGltZSI6NjMuNjc3LCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjo2My42NzcsImVuYWJsZWQiOmZhbHNlfV19LHsiaWQiOjE3NzcwOTI5MzQyOTksInZpZGVvSWQiOiJBeFg2VnlxZ1JCQSIsInRpdGxlIjoiVGhlIEZseWluZyBMdW5hIENsaXBwZXIg44K244O744OV44Op44Kk44Oz44Kw44O744Or44OK44O744Kv44Oq44OD44OR44O8ICgxOTg3IEphcGFuZXNlIGNvbXB1dGVyIGFuaW1hdGlvbiBMYXNlckRpc2MpIiwiYnBtIjo2MCwic3RlcERpdiI6MSwic2VxTGVuIjo4LCJzdGVwcyI6W3sidGltZSI6MzA1NC4yODcsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjE5ODMuOTgxLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjk2MC42NjUsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjcxNS4yNzcsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjUxNi44NzksImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjE2NDQuNjE2LCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjoyNDEyLjEwMywiZW5hYmxlZCI6ZmFsc2V9LHsidGltZSI6Mjg3Ni43NzMsImVuYWJsZWQiOmZhbHNlfV19LHsiaWQiOjE3NzcwOTM0MTk1NTQsInZpZGVvSWQiOiJqQ3hYdHBfbnlubyIsInRpdGxlIjoiRm9sZXlBdXRvbWF0aWM6IFBoeXNpY2FsbHktYmFzZWQgU291bmQgRWZmZWN0cyBmb3IgSW50ZXJhY3RpdmUgU2ltdWxhdGlvbiBhbmQgQW5pbWF0aW9uIiwiYnBtIjoxMjAsInN0ZXBEaXYiOjEsInNlcUxlbiI6OCwic3RlcHMiOlt7InRpbWUiOjE3LjI2NywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxNy4wMDEsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjQ1LjU1OCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo3MTUuMjc3LCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjo1Mi43MzEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NTcuNTEyLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjI0MTIuMTAzLCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjoyODc2Ljc3MywiZW5hYmxlZCI6ZmFsc2V9XX0seyJpZCI6MTc3NzA5MzUxODAzMywidmlkZW9JZCI6IjEzVkRGUm03TnFZIiwidGl0bGUiOiJHYWl0IE1hc3RlcjIiLCJicG0iOjEyMCwic3RlcERpdiI6Miwic2VxTGVuIjoyLCJzdGVwcyI6W3sidGltZSI6NS4zNjEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTAuNDM5LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjE3LjQ5MiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyMS4zNDgsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjMwLjc1MiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjozOS41OTIsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjM2LjAxOSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo1Ny4zNjcsImVuYWJsZWQiOmZhbHNlfV19LHsiaWQiOjE3NzcwOTM4Mzc0OTYsInZpZGVvSWQiOiJBbkJidGt4WkJSSSIsInRpdGxlIjoiUG93ZXJlZCBTaG9lcyIsImJwbSI6MTIwLCJzdGVwRGl2IjoxLCJzZXFMZW4iOjgsInN0ZXBzIjpbeyJ0aW1lIjo0Ljg2NCwiZW5hYmxlZCI6ZmFsc2V9LHsidGltZSI6NC44NjQsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjQzLjA4MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Ljg2NCwiZW5hYmxlZCI6ZmFsc2V9LHsidGltZSI6OTAuOCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Ljg2NCwiZW5hYmxlZCI6ZmFsc2V9LHsidGltZSI6NC44NjQsImVuYWJsZWQiOmZhbHNlfSx7InRpbWUiOjQuODY0LCJlbmFibGVkIjpmYWxzZX1dfSx7ImlkIjoxNzc3MDk0OTUyMTgzLCJ2aWRlb0lkIjoiRkNKdVFtYmtoVnMiLCJ0aXRsZSI6IkRhaWhhdHN1IFBpY28gQ29uY2VwdCIsImJwbSI6MTIzLCJzdGVwRGl2IjoyLCJzZXFMZW4iOjIsInN0ZXBzIjpbeyJ0aW1lIjoyLjc0MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyLjc0MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyNS40NywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyNC4yOTUsImVuYWJsZWQiOnRydWV9LHsidGltZSI6ODUuMDMxLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjEzNC40MDQsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTk3LjEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MjIwLjIxOSwiZW5hYmxlZCI6dHJ1ZX1dfSx7ImlkIjoxNzc3MDk1MjY0NzgzLCJ2aWRlb0lkIjoidG0wVm5rZDlCZFEiLCJ0aXRsZSI6Ik1hc3RlcnMgb2YgdGhlIE1hemUgU2Vhc29uIDI6IDMtMyIsImJwbSI6MTIzLCJzdGVwRGl2IjoyLCJzZXFMZW4iOjIsInN0ZXBzIjpbeyJ0aW1lIjo0OS41LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjUzLjQ4MywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxNTAuNzc2LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjE2Ny4yNzYsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTkxLjE3MiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyMTcuMzQ1LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjI3NC44MSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyODUuMDUyLCJlbmFibGVkIjp0cnVlfV19LHsiaWQiOjE3NzcwOTU4ODE2MTMsInZpZGVvSWQiOiJTNkNtN3kwZzNYQSIsInRpdGxlIjoiRGF6emVsb2lkcyAtIEFubmUgRGlsbHkgV2hpbSdzIERyZWFtIiwiYnBtIjoxMjMsInN0ZXBEaXYiOjQsInNlcUxlbiI6Miwic3RlcHMiOlt7InRpbWUiOjI0LjAwOSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyNi4yNzEsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NDYuMjc5LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQ4LjM2NywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo2NC4xOTksImVuYWJsZWQiOnRydWV9LHsidGltZSI6NjQuODk1LCJlbmFibGVkIjpmYWxzZX0seyJ0aW1lIjo4MC41NTMsImVuYWJsZWQiOnRydWV9LHsidGltZSI6NzYuNTUyLCJlbmFibGVkIjp0cnVlfV19LHsiaWQiOjE3NzcwOTY2MjcxNzksInZpZGVvSWQiOiJ1cWN5REEyTDVMMCIsInRpdGxlIjoiZnVyIGRpc3BsYWNlbWVudCB0ZXN0IiwiYnBtIjoxMjMsInN0ZXBEaXYiOjIsInNlcUxlbiI6Miwic3RlcHMiOlt7InRpbWUiOjQyLjcxOSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjo0Mi43MTksImVuYWJsZWQiOnRydWV9LHsidGltZSI6NTUuMTAyLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjU0LjM1OSwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxNC4yNCwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoyMy43NzQsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MzQuNDIzLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjQyLjk2NywiZW5hYmxlZCI6dHJ1ZX1dfSx7ImlkIjoxNzc3MDk2ODc1Nzg4LCJ2aWRlb0lkIjoiY2gySm1sdTFONk0iLCJ0aXRsZSI6IlR1cmJvIFRlZW4gVHJhbnNmb3JtYXRpb24gU3VwZXJjdXQiLCJicG0iOjEyMywic3RlcERpdiI6NCwic2VxTGVuIjoyLCJzdGVwcyI6W3sidGltZSI6MTE0LjcwMiwiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxMTQuNzAyLCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjExNi45MDcsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTE2LjkwNywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxMTYuOTA3LCJlbmFibGVkIjp0cnVlfSx7InRpbWUiOjExNi45MDcsImVuYWJsZWQiOnRydWV9LHsidGltZSI6MTE5LjExMywiZW5hYmxlZCI6dHJ1ZX0seyJ0aW1lIjoxMTYuOTA3LCJlbmFibGVkIjp0cnVlfV19XX0=).
+
+Most of the videos that I've "liked" in the past are no longer available, either through dead/deleted channels or removed from the site for whatever reason. So the video selection was mainly a process of returning to videos that I had liked which were still available, and adding a few more videos inspired by the batch of liked videos that I grabbed from my YouTube account. I'm an avid IMG/DSC collector, so I also included a few zero-view videos to see if they could be sequenced in a nice way. Unsurprisingly, a lot of my liked videos turned out to be uploads of 80s/90s era VHS tapes, TV, and software.
+
+List of videos (not in order of playback during Battle):
+
+- [IMG 7878](https://www.youtube.com/watch?v=qVsjevWuLiw)
+- [Accordion, Guitar, Yodeling](https://www.youtube.com/watch?v=ejgvmpa3eJ4) (this was my test video for the original sequencer)
+- [Phát âm tiếng Anh giọng Mỹ — 7 — Trần Thiện Tùng.DAT](https://www.youtube.com/watch?v=of3VMbAueT4) (English pronunciation video, used extensively in Stretch Vowels)
+- [Tranquil Moments® Sleep Sound Therapy System](https://www.youtube.com/watch?v=HdEWK1SSmFY)
+- [QUBE Cincinnati — Swordquest](https://www.youtube.com/watch?v=BEaZ4a4Hb2I)
+- [IMG 0117](https://www.youtube.com/watch?v=sDgv5Yy6LuI)
+- [Tipa the Ant / Skudriņa Tipa (1976) — Ansis Bērziņš](https://www.youtube.com/watch?v=lwjoXA5cXQc)
+- [The Spiral Demo — Resistance — Sega Megadrive Demo](https://www.youtube.com/watch?v=OLcuoxklTJo)
+- [The Flying Luna Clipper ザ・フライング・ルナ・クリッパー (1987 Japanese computer animation LaserDisc)](https://www.youtube.com/watch?v=AxX6VyqgRBA) (thanks KL for better quality upload)
+- [FoleyAutomatic: Physically-based Sound Effects for Interactive Simulation and Animation](https://www.youtube.com/watch?v=jCxXtp_nyno)
+- [Gait Master2](https://www.youtube.com/watch?v=13VDFRm7NqY), [Powered Shoes](https://www.youtube.com/watch?v=AnBbtkxZBRI) (VR Lab in Tsukuba)
+- [Daihatsu Pico Concept](https://www.youtube.com/watch?v=FCJuQmbkhVs)
+- [Masters of the Maze Season 2: 3-3](https://www.youtube.com/watch?v=tm0Vnkd9BdQ) (one of a trend of green screen/maze game shows in late 80s early 90s, this one is especially awkward)
+- [Dazzeloids — Anne Dilly Whim's Dream](https://www.youtube.com/watch?v=S6Cm7y0g3XA) (Rodney Alan Greenblat's Dazzeloids CD-ROM, he went on to do Parappa the Rapper)
+- [Fur displacement test](https://www.youtube.com/watch?v=uqcyDA2L5L0) (prolific YouTube outsider artist Wendy Vainity)
+- [Turbo Teen Transformation Supercut](https://www.youtube.com/watch?v=ch2Jmlu1N6M)`,
+      videos: [
+        { id: "qVsjevWuLiw", title: "IMG 7878" },
+        { id: "ejgvmpa3eJ4", title: "Accordion, Guitar, Yodeling — When I Was Hungry Lord You Fed Me" },
+        { id: "of3VMbAueT4", title: "Phát âm tiếng Anh giọng Mỹ — 7 — Trần Thiện Tùng" },
+        { id: "HdEWK1SSmFY", title: "Tranquil Moments® Sleep Sound Therapy System" },
+        { id: "BEaZ4a4Hb2I", title: "QUBE Cincinnati — Swordquest" },
+        { id: "sDgv5Yy6LuI", title: "IMG 0117" },
+        { id: "lwjoXA5cXQc", title: "Tipa the Ant / Skudriņa Tipa (1976) — Ansis Bērziņš" },
+        { id: "OLcuoxklTJo", title: "The Spiral Demo — Resistance (Sega Megadrive)" },
+        { id: "AxX6VyqgRBA", title: "The Flying Luna Clipper (1987 Japanese LaserDisc)" },
+        { id: "jCxXtp_nyno", title: "FoleyAutomatic: Physically-based Sound Effects" },
+        { id: "13VDFRm7NqY", title: "Gait Master2 (Tsukuba VR Lab)" },
+        { id: "AnBbtkxZBRI", title: "Powered Shoes (Tsukuba VR Lab)" },
+        { id: "FCJuQmbkhVs", title: "Daihatsu Pico Concept" },
+        { id: "tm0Vnkd9BdQ", title: "Masters of the Maze Season 2: 3-3" },
+        { id: "S6Cm7y0g3XA", title: "Dazzeloids — Anne Dilly Whim's Dream" },
+        { id: "uqcyDA2L5L0", title: "Fur displacement test (Wendy Vainity)" },
+        { id: "ch2Jmlu1N6M", title: "Turbo Teen Transformation Supercut" },
+      ],
     },
     result: "both",
   },
   {
     round: 2,
     label: "Round 2",
-    red: { name: "Antee", diary: `…`, videos: [] },
+    red: {
+      name: "antee",
+      diary: `临行前，将网页上的视频下好后逐个转码为总量超过 100G 的原始视频素材，准备在现场实时 VJ。不巧，现场被告知只能浏览器播放，可惜了，手忙脚乱把素材赶紧在网页一字排开，算是救火执行。
+
+but，后面却发现有参加的兄弟还是用 Arena 在 VJ，无人在意，害。
+
+思路就是现场听了一下 DJ 的风格、速度，在油管把不同节奏律动的跳舞视频和我们老一辈的互联网鬼畜素材拿出来玩玩，没有太多想法，只是 enjoy 这个氛围，并且 rave。我认为这个比赛中技术不是最重要的，若非要问，一个顺畅的播控、流畅的素材播放给予舞池的连贯的体验最重要，但可能受制于临时的网络环境，所以没太深究这个事。并且，我觉得也用不着"为赋新词强说愁"凑一篇技术论文，因为我没有使用任何技术，只有朴素的，对于甄嬛传和鬼畜的热爱。
+
+以上。`,
+      videos: [],
+    },
     blue: {
       name: "Lillian",
       diary: `[Lillian Lijuan Liu](https://www.instagram.com/lijuan2046)
@@ -536,7 +595,62 @@ round 7 现场使用的页面：
 
     round: 8,
     label: "Round 8",
-    red: { name: "EwAn Qian", diary: `…`, videos: [] },
+    red: {
+      name: "EwAn Qian",
+      diary: `[Ewan Qian](https://ewanqian.site)
+
+基本思路
+这轮我想做的不是一个很完整、很规整的 VJ set，而是一条能在现场跑起来的素材路径。核心还是用公共现成视频做选择、切换、跟拍和推进，让画面跟着 DJ set 的能量走。
+
+整体上我把这轮分成几个段落：先用一个有反差感的 opening 把现场第一口气调出来，再进入高速游戏和竞技素材，把节奏和能量推高；中间再转到更流行、更轻、更亮的段落，让现场情绪换色；最后用一个非常直接、带记忆点的 ending 收尾。
+
+我这轮最在意的不是效果堆得多复杂，而是素材之间能不能接得住，画面能不能跟拍，现场失控的时候能不能收得回来。对我来说，这更像一次现场操作逻辑的实验。
+
+Opening
+- 郭德纲、于谦《艺高人胆小》：用来做开场反差。画面和现场电子音乐之间会形成一种很怪、很好笑的错位感。操作上不会一开始就打满，主要是低透明度、轻闪、慢慢把现场气氛带起来。
+
+Part 1
+- 《祖玛》高手操作 / 可能的人类理论记录：这是第一段的主体。它的快感很直接，适合跟着大拍推进，也适合做一些小闪和切黑。高手操作里的空射、倒序组织、快速反应，会把一个童年游戏打成非常流畅的节奏机器。
+- DELIVERY MUST COMPLETE：用来做高潮段。高速空战、飞行、drop 段的推进感很强，适合把能量继续往上推。它有一种很明确的高速竞技感，和现场电子音乐的快节奏很容易接上。
+- osu! 世界前 50 名玩家视频：这一段更偏节奏密度和人类反应极限，适合碎拍、短闪和局部加亮。它不是传统意义上的漂亮画面，但很适合表现"人在极限操作"的状态。
+
+Part 2
+- Perfume《Edge Driving remix》：用来把前面的游戏竞技感转成更冷、更硬边、更情绪化的电子段落。夜车、舞台、电子音乐的质感很适合做中段转色。
+- 崔叡娜《Catch Catch》一键换装：这里是故意把现场情绪换成更轻、更可爱、更亮的状态，让前后形成明显转色。前面一直高速、竞技、空战，如果不换气会很累，所以这一段是一个轻快的换频道。
+- 【36 作对比】《再生》(Perfume)：这一段更像群像式的大合唱。很多人根据《再生》做了各种抽象剪辑和鬼畜二创，包括马里奥风格和各种互联网版本。这个视频把 36 个版本合在一起，像把分散的网络碎片突然合成一个大合唱，现场配合 glitter 式闪烁会特别热闹。
+
+Ending
+- 朗朗与赵本山《赛马》：用来收尾。它很直接，速度感也很强，最后观众容易记住。作为 ending，它不需要太复杂，重点是速度、记忆点和一个清楚的收束。
+
+未使用但保留的素材
+- REZ 回顾：经典赛博射击游戏，很早就把数字互联网、音乐、射击和抽象视觉放在一起。方向很对，但这轮里没有《祖玛》和空战那么直接。
+- Beat Saber 谱面制作：数千行代码、数十万条数据最后变成身体能打出来的谱面，概念很好。但它更像技术说明，不如 osu! 高手视频那么一眼进入现场状态。
+- "你是否见过巅峰时期的承太郎"：早期 JOJO 影像的华丽和锋利感很强，适合另一种更燃、更动漫化的现场段落。
+- 《斩不断命运的大剑，跟汽水瓶又有什么区别呢？》：《剑风传奇》同人二创素材。原本有一种很廉价的材料感，但气质到了；后来被 AI 影像化之后，反而变成特别有气势、特别燃的动画。
+- 《最全的小小功夫火柴人电影》：让我想到早期 Flash 动画和游戏。火柴人很简单，但打击感非常直接。
+- 《奥特曼格斗进化重生》全 CG — 动作重量很棒，把特摄动作的力量提炼得很直接。
+
+补充说明
+这轮我用的是 Found VJ Deck、Chrome 和 APC mini mk2。说白了，APC mini 摆在那儿有一部分是为了让我自己安心。键盘当然也能干很多事，但网页环境太烦了。B 站有自己的快捷键，Chrome 有自己的快捷键，输入框还会突然抢焦点。现场我手已经在找拍子了，它突然给我暂停、跳进度、触发网页功能，这种东西很破坏状态。
+
+所以我才把常用动作从键盘里拿出来，放到一个我手能摸到的地方。它不是说一下子让我变成什么专业灯光师或者 VJ，只是让我在那个十分钟里少一点慌。手放在控制器上，我知道这里是切视频，这里是闪，这里可以黑一下，这里可以把东西收回来。这个边界感对我很重要。
+
+真正上场的时候，我用得最多的其实也就那几下：切素材，跟拍子，闪一下，黑一下，音乐推起来的时候往前顶一点，乱了就赶紧收住。前面我也想过很多更自动的东西，比如自动 BPM、自动跟闪、自动推进状态。测试的时候确实挺吓人的，好像网页自己活了。但现场真打起来，我还是更相信手上的几个动作。TAP 敲进去，RESYNC 对一下，听到拍子来了就跟，觉得不对就收。
+
+这套东西现在还很临时。公开视频链接也不是素材库，更多就是一个现场索引。它能不能成立，还是看我当时有没有选对视频，切换有没有落在拍子上，快的时候能不能推上去，慢的时候能不能别硬冲。还有一个很现实的问题：现场一乱，人会不会忘记自己该按哪里。
+
+所以我现在回头看，这个工具最有用的地方不是滤镜多，也不是看起来很像一个控制台。它只是帮我把手稳住一点。画面和音乐能不能接上，最后还是要靠现场判断。这个判断只能练，没法全自动。`,
+      videos: [
+        { id: "BV14xoXBvE8M", source: "bilibili", title: "Opening - 郭德纲、于谦《艺高人胆小》" },
+        { id: "BV1ErFJe2EXv", source: "bilibili", title: "Part 1 -《祖玛》高手操作 / 可能的人类理论记录" },
+        { id: "BV193p4zuEGm", source: "bilibili", title: "Part 1 - 《DELIVERY MUST COMPLETE》" },
+        { id: "BV1aE411T7X9", source: "bilibili", title: "Part 1 - osu! 世界前 50 名玩家视频" },
+        { id: "BV11x411A7F7", source: "bilibili", title: "Part 2 - Perfume《Edge Driving remix》" },
+        { id: "BV11FoLBoEVB", source: "bilibili", title: "Part 2 - 崔叡娜《Catch Catch》一键换装" },
+        { id: "BV1FDZYB6EBu", source: "bilibili", title: "Part 2 -【36 作对比】《再生》(Perfume)" },
+        { id: "BV1gW411K7Ag", source: "bilibili", title: "Ending - 朗朗与赵本山《赛马》" },
+      ],
+    },
     blue: {
       name: "daymoss (deimos)",
       diary: `放一些自己喜欢的游戏视频，并尝试将它们以一个虚无缥缈的故事线串联起来。
@@ -580,7 +694,27 @@ round 7 现场使用的页面：
 
     round: 9,
     label: "Round 9",
-    red: { name: "Liejie", diary: `…`, videos: [] },
+    red: {
+      name: "Liejie",
+      diary: `关键词：功夫 / 老年人表情包 / 晨练 / 另一种 Y2K
+
+心路历程
+本来想做游戏相关的媒介视频，找了好几个绝地求生的 B 站录屏和早期 GTA，发现手游画面很丰富了没有变化拓展空间，于是改方向。
+
+怎么找的资源
+没有思路在 B 站上漫游，我方向偏好是寻找本身带有电子包浆的视频。于是在搜索的时候特意去限定 filter 时间范围大概在 2020 前的视频。
+
+然后在 B 站偶然看到一个道士在练功的视频，非常符合我想要有人物动态、有冲击力，而且运镜有手持的抖动很生活化的要求，并且画质相当模糊有种上世纪的美感。
+
+画面思路
+于是找了一系列的练功、打拳、功夫教程的视频。顺着这个主题发现老年人晨练的气势更胜一筹很硬核有活力生命力，适合 DJ 氛围更强烈时候素材。从老年人联想老年人常用的表情包，在同一个主题下，配色元素能够唤起观众的熟悉的记忆，是完美的媒介素材，老年人表情包也算一种 Y2K。
+
+对于 DJ 的 Jam 的变化
+- 常态 — 功夫视频：打拳、太极、螳螂拳、练功 + 切换帧率效果
+- 嗨起来 — 老年人开始晨练 + 动作拖尾调整速率
+- 最后加效果 — 老年人表情包开始爆炸旋转出现叠加晨练切换，呈现精气神十足吉祥如意的效果`,
+      videos: [],
+    },
     blue: {
       name: "Changbai",
       diary: `[Changbai](https://changbai.li/)
@@ -670,24 +804,242 @@ done`,
 
     round: 10,
     label: "Round 10",
-    red: { name: "Seph", diary: `…`, videos: [] },
-    blue: { name: "Kedi", diary: `…`, videos: [] },
+    red: {
+      name: "Fernando",
+      diary: `[Fernando / sephfar.com](https://sephfar.com)
+
+我从未对这次演出的方向有清晰的构想。整个过程更像一个沙盒实验，受控制视频系统的开发、各种视频素材的搜索以及沿途测试的影响，不断探索哪些效果对现场观众来说更有趣或更合适。
+
+视频素材的搜索
+这无疑是整个过程中最困难的部分。我给自己设定了一个任务：尽量寻找播放量不足 5000 次的视频。然而我意识到，作为一个亲历了 YouTube 诞生与成长时代的人，如今想找到"隐秘内容"已经非常困难了。没有任何工具、筛选器或机制能帮你按播放量排序内容，只能查看在某个特定日期之前上传的视频。在我完全不熟悉的 Bilibili 上，结果也大同小异。
+
+我在寻找什么
+我希望主要使用观众不熟悉的内容。但我发现，要区分"真正冷门的内容"和"只是由冷门账号上传的热门内容"，实在太难了。还有画质和动态感的问题，在现有搜索算法的限制下，很难找到既有足够动态感、又有不错画质的真正冷门内容。当然，每当搜索某个主播或 YouTuber "0 播放量"视频时，结果总是那些在被发现之后已经拥有数万甚至数十万播放量的视频。
+
+在最初的挫败感之后，我决定转变思路，转而寻找对我来说非常熟悉、但对国际观众而言完全陌生的内容：90 年代的乌拉圭电视节目。这意味着画质不高但也不至于太差，制作还算精良，却对非乌拉圭人而言完全无从辨认。
+
+由此，我开始以《Los Tatitos》（定格动画短片）、《Cacho Bochinche》（一档将真人主持与木偶、动画结合的儿童节目）和《Americando》（一档聚焦乌拉圭乡村文化与风俗的科普节目）为基础，构建我的第一批视频素材。
+
+叙事线索的寻找
+我有一个出发点，坦白说，那已经是活动前一晚的事了。于是我开始思考，能在这些内容中构建出怎样一种隐性叙事。到目前为止，我的核心主题是 90 年代的儿童怀旧，于是围绕同一主题，我想到了以叙事上的对比来切入，去寻找 90 年代面向儿童的反毒品公益广告。我找到了一批相当冷门的视频，但它们具有极强的动态感、戏剧张力，以及恰到好处的"尴尬感"，足以为演出带来叙事上的反差和幽默元素。
+
+整体构想是：从以趣味和文化为核心的儿童教育内容，逐渐过渡到以恐惧和禁令为基础的儿童教育内容。
+
+基于氛围的内容
+由于这是一场 VJ 对战，我事先不知道音乐会是什么风格，所以我准备了一些以冲击力为核心的视频。
+- 如果氛围更偏冷静、环境感和旋律性，我准备了一些以旅行为主题的视频，包括城市场景、自然风景以及人们穿梭于城市中的画面。与此搭配的还有一段"民防公共信息"视频，其中某些片段与旅行视频的氛围颇为相近，但它是动画形式的。
+- 如果音乐更轻松活泼，我准备了一些猫咪视频，以及来自某档儿童电视节目的舞蹈片段，我甚至没有去查这个节目的来源。
+- 如果音乐强烈而充满活力，我有鸡舞视频和史莱克视频，后者可以加速播放以配合音乐的节奏感。
+
+史莱克理论
+在前往 UFO 的出租车上，我一边思考演出，一边开始意识到：无论音乐的氛围如何，我都会在某个时刻引入史莱克。因为当你所看到的一切都是陌生的，即便它是有趣的，一个观众已经熟悉的符号的出现，可以成为调动参与感的强大工具。最终，音乐的氛围与史莱克登场的时机配合得恰到好处。
+
+注意：在演出过程中，部分视频未能正常加载，其中一个视频自动跳转到了下一个推荐视频，这迫使我在现场进行了一些即兴发挥和临场应变。
+
+系统
+原计划是同时使用一个浏览器脚本来直接控制视频，以及一个 TouchDesigner 叠加层来实现一些额外效果，所有操作均映射到一个 MIDI 控制器输入。最终我决定只使用浏览器脚本，甚至没有打开 TouchDesigner 项目。浏览器脚本用 TamperMonkey 插件运行 JavaScript 代码；视频切换通过 Ctrl+Tab（切换到下一个标签页）或 Ctrl+Tab+数字键跳转到特定标签页来进行。
+
+视频分组
+
+第一组：儿童电视节目
+- Americando | CORTINA INTRODUCTORIA (Teledoce Televisora Color)
+- LOS TATITOS VAN A LA ESCUELA — CANAL 4 URUGUAY
+- Los Tatitos — Capítulo 5. Vamos a compartir
+- Escuela en el fondo del mar (Cacho De La Cruz)
+- 洪恩小乌龟学美语 Franklin
+
+第二组：令人尴尬的儿童戒烟/戒毒公益广告
+- Anti-Marijuana PSA: "Family Invention" (1993)
+- 1970s Canadian Anti Smoking PSA — Light Me Harry
+- Anti-Smoking PSA — Too Smart to Start (1990s)
+- Dying for a Smoke (1967)
+- Anti Smoking PSA — 90s
+
+第三组：根据现场音乐氛围选用的视频
+- World's Greatest Train Ride Videos — Trans-America (1995)
+- Chicken Dance
+- "Can you dance like this" warm-up
+- Funniest Cats and Dogs — Funny Animal Videos #35
+- 有趣猫咪视频 2025
+- Shrek glitches
+- Very creepy commercial from the 70's
+- Civil Defense Public Information`,
+      videos: [
+        { id: "WaJPpyxOpbM", title: "G1 — Americando | CORTINA INTRODUCTORIA (Teledoce)" },
+        { id: "6S6ZH6EM3YA", title: "G1 — Los Tatitos van a la escuela (Canal 4 Uruguay)" },
+        { id: "VgiNu1AnG5E", title: "G1 — Los Tatitos · Capítulo 5. Vamos a compartir" },
+        { id: "2SprQ7Uu9XQ", title: "G1 — Cacho De La Cruz · Escuela en el fondo del mar" },
+        { id: "MDYLQKqGAT8", title: "G1 — 洪恩小乌龟学美语 Franklin" },
+        { id: "xzmChQvz4E0", title: "G2 — Anti-Marijuana PSA: \"Family Invention\" (1993)" },
+        { id: "2whizfCVnBc", title: "G2 — 1970s Canadian Anti Smoking PSA — Light Me Harry" },
+        { id: "a2j1mH1xO0k", title: "G2 — Anti-Smoking PSA — Too Smart to Start (1990s)" },
+        { id: "TR8LIqENQAA", title: "G2 — Dying for a Smoke (1967)" },
+        { id: "mi-7HwwN9PQ", title: "G2 — Anti Smoking PSA — 90s" },
+        { id: "XnDvWXKZqt8", title: "G3 — World's Greatest Train Ride Videos · Trans-America (1995)" },
+        { id: "6UV3kRV46Zs", title: "G3 — The Chicken Dance (Lawrence Welk)" },
+        { id: "SlNQpIvtGYE", title: "G3 — Can you dance like this (meme)" },
+        { id: "tAcjl9S9exw", title: "G3 — Funniest Cats and Dogs · Funny Animal Videos #35" },
+        { id: "3RGH3utrYD4", title: "G3 — Funniest Dogs and Cats of 2025" },
+        { id: "aZ14SotzITE", title: "G3 — Shrek Animation Glitches" },
+        { id: "4-izxXJgnuQ", title: "G3 — Very creepy commercial from the 70's" },
+        { id: "SZTOpU4r7-g", title: "G3 — Civil Defense Public Information" },
+      ],
+    },
+    blue: {
+      name: "kedi",
+      diary: `音乐和迷幻强绑定，于是在 VJ 部分就应该更迷幻。
+我其实想做两个视频叠加消失的效果，奈何能力有限，于是干脆从视频入手。我找了和迷幻强相关的 Shoegaze、Dreampop、postpunk 的音乐 MV，通过配合音乐的节奏播放。
+
+视频 MV 列表
+- My Bloody Valentine - To Here Knows When
+- My Bloody Valentine - Soon
+- Ride - Vapour Trail
+- Pinkshinyultrablast - Ravestar Supreme
+- No Joy - Hollywood Teeth
+- Tamaryn - Dawning
+- Flyying Colours - It's Tomorrow Now
+- Chapterhouse - Pearl
+- Diiv - Healthy Moon
+
+TD Web Render VJing
+整体思路是用 TD Web Browser 去实时使用浏览器，然后在 TD 里面写 MIDI 控制效果（左上角 MIDI 映射集合方便 link 和写效果）和自己根据习惯写的音频分析集合（左下角）。演出时候类似一个随机视频电台和一个短视频+直播间实时。演出当中麦克风收音存在问题，然后演出中间想到然后改成 LFO 相当于自己走 BPM 去跑自动。
+
+使用了一个长视频随机 YT 视频网站 [astronaut.io](http://astronaut.io/#) 和短视频 [抖音](https://douyin.com)，两个随机视觉加了颜色配置获得更好的颜色范围后做叠加。后面就接了一堆自己常用的平面效果然后想怎么写给 MIDI 怎么写，如比如改 level 亮度、sat 颜色、bloom、noise filter、景深。另外整点装饰性 cheating Ikeda 风格的视觉效果做切换。`,
+      videos: [
+        { id: "xdHS1sbV5xw", title: "My Bloody Valentine - To Here Knows When" },
+        { id: "ft56il9bGMk", title: "My Bloody Valentine - Soon" },
+        { id: "pVhNi5cU8mo", title: "Ride - Vapour Trail" },
+        { id: "cgdcT2RZARc", title: "Pinkshinyultrablast - Ravestar Supreme" },
+        { id: "CouaLR--Efo", title: "No Joy - Hollywood Teeth" },
+        { id: "1eevJ5R0zzE", title: "Tamaryn - Dawning" },
+        { id: "3yFXdlntIwo", title: "Flyying Colours - It's Tomorrow Now" },
+        { id: "JEIAaWQfxMY", title: "Chapterhouse - Pearl" },
+        { id: "p5Un9GH-Z0Q", title: "Diiv - Healthy Moon" },
+      ],
+    },
     result: "red",
   },
   {
 
     round: 11,
     label: "Round 11",
-    red: { name: "kuanfuweimu", diary: `…`, videos: [] },
-    blue: { name: "jingwei", diary: `…`, videos: [] },
+    red: {
+      name: "kuanfuweimu", diary: `管付为模 Kuanfu Weimu
+TD Web Render VJing 
+整体思路是用TD Web Brower去实时 使用浏览器，然后在TD里面写MIDI控 制效果（左上角MIDI映射集合方便link 和写效果）和自己根据习惯写的音频分 析集合（左下角）。 演出时候类似一个随机视频电台和一个 短视频+直播间实时。演出当中麦克风 收音存在问题，然后演出中间想到然后 改成LFO相当于自己走BPM去跑自动。 使用了一个长视频随机yt视频网站 http://astronaut.io/# 和短视频抖音 douyin.com, 两个随机视觉加了颜色配 置获得更好的颜色范围后做叠加。后面 就接了一堆自己常用的平面效果然后想 怎么写给midi怎么写如图比如改level亮 度、sat颜色、bloom、noise filter、景 深。另外整点装饰性cheating Ikeda风 格的视觉效果做切换。       
+      `, videos: []
+    },
+    blue: {
+      name: "jingwei",
+      diary: `赛前一周
+原本是不想准备的，打算比赛当天再说。但是迫于"天琦"制造的压力（他们甚至建了一个名为《VJ 紧张备赛，不要在所有人面前丢人》的微信群），不得不早早建一个 YouTube List，以缓解自己焦虑的情绪。
+
+由于是门外汉，我选择先向 Gemini 老师求助。我向它描述了比赛的规则，它不出所料地给了我满屏的"技术选型指南"（就是用什么 VJ 软件对视频素材进行处理之类的），完全是不得要领。然后我让它别总是考虑"技术"（主要是我也学不会），帮我提供一些网络视频中的"尖儿货"，它终于有点开窍了（但是不多），给我提供了一些"故障艺术""复古未来主义"的 YouTuber，我从中选了几条观感还不错的，放进了 List 里面，当做兜底用的视频。
+
+不过这些视频的内容都跟传统 VJ 使用的视觉元素太接近了，看多了就会觉得有些无聊，于是我又让它找些"打破常规"的视频给我，这次它提供了一些还不错的思路，比如：Live Camera（摄像头影像直播）、ASMR、90 年代电视广告、低幼向的 3D 动画等等。我浏览了部分视频，选择了几个 Live Earth Cams 丢进了 List 里面，觉得这种"直播"视频带来的"共时性"的体验，也许会是比较独特的，可惜的是这些视频都太"静"了，现场 Battle 的时候根本用不上。
+
+我又给了 Gemini 一次机会，想看看它还能挖掘出什么，这一次我让它尽可能找足够 "Weird" 的视频，而它提供的选择也已经非常出色了。它给了我：Cool 3D World、Cyriak 和 Surreal Entertainment，这几个频道的视频素材都是非常具有"奇观感"，而且很容易通过控制去匹配音乐的节奏的类型，可以说是 VJBattle 的天选素材了（我 Battle 时候使用的"奇怪猫咪"和"分形学手指"都是出自 Cyriak 这个频道，有一个很经典的 MV 也在这里分享一下：Bonobo — Cirrus）。
+
+这期间，我还联想起了一位此前就关注的像素艺术家 Paul Robertson，于是有找了几个他做的视频放进了 List 里面。此刻，我的 List 已经有了 10 个左右的视频，焦虑的情绪得到了充分的缓解，就没有继续在这件事上投入精力了。
+
+比赛当日白天
+前一天晚上我跟 PJ 还有唱白一起去看了《寂静的朋友》这部电影，影片里面有很多幕都让我联想到常规的 VJ 会使用的视觉元素，也让我联想到，使用"写实"风格的自然影像，或许是在 VJBattle 中没那么容易与其他人撞车的，于是第二天前往"油管"前，我又找了一些"怪异的深海鱼类"，加入到 List 里面。
+
+比赛中
+由于一些意外状况，我的参赛顺序从第一位调整到了第十一位，这让我有了充分的时间，从其他 VJ 的所使用的素材中汲取灵感（当然也是迫于现场大家都放的太好了的压力）。我又在等待的过程中加入了很多临时想到的主题的视频。
+
+一些现场视频让我想到早期质量堪忧的 AIGC Video，于是我去找了经典的 Will Smith 吃意面的视频；deimos 的各种古早任天堂游戏视频，让我也想给 List 里面加入一些游戏元素（毕竟自己也是做 VideoGame 的），我觉得音游可能会比较合适，能产生在现场玩的错觉，于是就去找了 Trombone Champ（滑稽吹小号音游）。其实我觉得《节奏天国》可能也很合适，但想到阿久可能会用，于是就没放进去。现场还看到了很多国产动画片，我觉得魔方大厦非常合适，就也加到了 List 里面；以及，电脑蓝屏的画面让我想到了早期的 Windows 屏保；还有就是一些故障视频，让我觉得各种游戏 Bug 的合集，放出来效果也不错（实时并非如此，Bug 出现的节奏太不可控了）。最后，我找了一棵树的延时，打算通过回归自然影像主题作为结束。
+
+比赛用的 List：[YouTube playlist](https://youtube.com/playlist?list=PL3ep9ZTa-hksMrWta9Dme-siR-EdN06EK)`,
+      videos: [
+        { id: "WF34N4gJAKE", title: "Bonobo — Cirrus (by Cyriak)" },
+        { id: "QNwCojCJ3-Q", title: "MEOW (Cyriak) — 奇怪猫咪" },
+        { id: "vbWe5k4fFWE", title: "Will Smith Eating Spaghetti (early AI)" },
+        { id: "kGtqdCgY4WA", title: "Trombone Champ gameplay" },
+        { id: "Hxq69qX3RNE", title: "魔方大厦 01 — 玻璃城（上海美影）" },
+      ],
+    },
     result: "red",
   },
   {
 
     round: 12,
     label: "Final Round",
-    red: { name: "chen xin", diary: `…`, videos: [] },
-    blue: { name: "joanna", diary: `…`, videos: [] },
+    red: {
+      name: "chen xin",
+      diary: `首先我觉得最困扰的一点是在构思这个活动的时候我觉得"找视频"这件事应该也是现场完成的，那么每一次找视频就有可能变成一场豪赌，因为有可能从预览图中给到的信息能大概判断它的主题，但可能无法判断视频内部具体的运动程度、剪辑的节奏等等和 VJ 非常相关的属性，因此我决定开发一个插件能够让开启这场豪赌之后，仍然可以用一些 DJ 手段将不合适的视频节奏人为桥接在音乐上的方式，然后 video_vinyl_scratcher 就诞生了。
+
+video_vinyl_scratcher
+这是一个可以将已经播放过的视频写入 RAM，用鼠标拖拽唱盘来调变视频的播放头，实现 scratch 体验的浏览器插件，右下角的四个红点用于定义唱盘旋转一圈涵盖多少的播放时长。另外唱盘中心的封面图是直接截取了调出这个插件时，视频的静帧缩略图。写这个插件的过程其实也是一种和视频网站加载策略的对抗过程，由于懒加载机制，很难直接读取到没有被播放过的所有视频帧，自然也就很难丝滑地调变那些帧。（让人难受）
+
+插件 demo 下载
+[百度云](https://pan.baidu.com/s/1n7qMDF7d8lZPJXiDx6F4rg?pwd=p3k2)
+[Google Drive](https://drive.google.com/file/d/1OboSKjQiTsALiTKkaoC3rwKRmWD1G5QY/view?usp=drive_link)
+使用方法详情见文件内 README 使用手册。`,
+      videos: [
+        { id: "WQO-aOdJLiw", title: "Baaa" },
+        { id: "CBBvXth-O_g", title: "chimpnology" },
+        { id: "_yygFCfzDv0", title: "Grandma vs Grandpa Anime Fight!" },
+        { id: "gxusrZiYzbw", title: "Victor Vinyals — Character Rig Animation Reel" },
+        { id: "NudOevPvw8E", title: "Rollerskate" },
+      ],
+    },
+    blue: {
+      name: "Joanna",
+      diary: `[@jyolyyyu](https://www.joannalyu.com)
+
+How this began
+（很显然这个 "good internet" 都没有满足，真希望可以用有线网络来保证一个畅通的实时视频播放……）
+
+至于做这个 VJ battle 背后的东西，在反思和准备在 VJ battle 活动之前发生的这个工作坊的时候，已经尝试从客观的角度整理了一个关于就是使用既有媒介进行 VJ / audiovisual performance 的脉络：从一开始真正使用剪刀来剪辑 film，到 TV 普及早期使用 TV signal 进行 remix 演出的 Emergency Broadcast Network，到 niconico / YouTube / Bilibili 的视频网站鬼畜文化等等。
+
+作为选手
+作为选手，本来想做的一些大招（比如插件）都做了一半都没时间做出来。至于我本来希望用到的素材，断断续续都加在这个叫 [vj battle](https://www.youtube.com/playlist?list=PLjRoW7iOcBQKmc9VCfqCker4eXMUJ7zTM) 的 YouTube playlist 里。
+
+还有现场看到 deimos 说他只想 V 自己喜欢的东西，立刻抛弃了所有 found media 的素养，开始摆烂单纯找自己最喜欢的二次元 IP 的内容，但因为只有几分钟，也只搜了一点点个位数的视频。然后现场发现 VPN 节点全挂了之后，紧急在 Bilibili 搜索的，还有那晚上的 YouTube 的紧急搜索记录。
+
+工具
+只用了快捷键：< > ，还有切换 tab 的键：⌃Tab。`,
+      videos: [
+        { id: "bdwSZgEwcVY", title: "gif" },
+        { id: "Hr4bI1CBwi0", title: "Study for Outdoor Sculpture" },
+        { id: "qLRq5exjsVc", title: "Study for Anvil Sculpture" },
+        { id: "UmVqfP0Kn_I", title: "Study for Kinetic Sculpture" },
+        { id: "sjDZJparL9Y", title: "Emergency Broadcast Network - Just Jam (BB)" },
+        { id: "JSY_sOw-vXs", title: "Study for Untitled Stone Waiting Sculpture #2" },
+        { id: "CqNDhBtAsYc", title: "Study for Notification Sculpture" },
+        { id: "RSHrAhPYRhM", title: "Aspocket_bk" },
+        { id: "h1Gl6Ek50PU", title: "TV Ad, Left Half" },
+        { id: "54kHlavwl-k", title: "ADDICTIVE TV vs STREET FIGHTER x TEKKEN" },
+        { id: "_KmYzTp26Bs", title: "IRON MAN vs ADDICTIVE TV" },
+        { id: "kYx6ngdRWfg", title: "Sega logo effects 1" },
+        { id: "fUym0YdwPzo", title: "ACS Logo Effects" },
+        { id: "cULQQWY7rjw", title: "PBS kids Dash Logo Mejor 687" },
+        { id: "m7fzAjTIatg", title: "IGS/UNIS Logos Normal" },
+        { id: "CaKK8hpZoXU", title: "Capcom Logo History - Ultimate Edition" },
+        { id: "RnOdBKdTbDA", title: "Bullet-Proof Software / Blue Planet Software Logo History" },
+        { id: "eyCDagFLW3M", title: "News Intro Compilation Europe 2016 (HD)" },
+        { id: "WX-DC2pVBR8", title: "MTRCB Intro animation Effects" },
+        { id: "OGaFquo1A10", title: "March 13, 2026" },
+        { id: "bMj4fUH1mjE", title: "10 hours of Aphex Twin limo" },
+        { id: "twgYRT9Dv2s", title: "TimeToy" },
+        { id: "4wfuK_AbZiQ", title: "SLUMLORDZ ~ SANDWICH" },
+        { id: "4gMqfwmk1H4", title: "Localizing Aurora Borealis entirely in my Kitchen" },
+        { id: "fhgfahfKlH8", title: "Perc — Look What Your Love Has Done To Me" },
+        { id: "zv7bkr49xOY", title: "总部和工厂介绍影片｜TOYO INNOVEX" },
+        { id: "xmqA39XdbEA", title: "Tasho Ishi — Collapse Roppongihills" },
+        { id: "PPmcu8xz1tY", title: "Emergency Broadcast Network — Real War (BB)" },
+        { id: "T5Vsjof1OU8", title: "ADDICTIVE TV vs NOBEL SON — the movie remix" },
+        { id: "JbjjQhle_F0", title: "NHK News intro 1979" },
+        { id: "w91rIKOt_ro", title: "Sigla fine trasmissioni RAI (1985-1990)" },
+        { id: "M5gIjQnCkJk", title: "ITV news titles (Thai, 2003–2007)" },
+        { id: "Xu_JZgZf-e8", title: "\"Lord give one more chance\" - Chainsaw Man Edit" },
+        { id: "ddXM6HX1PgU", title: "Persona 4 Dancing All Night Opening" },
+        { id: "WaWK_ksfZic", title: "freak!" },
+        { id: "KPeYYXDxyUg", title: "🎵🕹️" },
+        { id: "wO61D9x6lNY", title: "Outside In" },
+      ],
+    },
     result: "red",
   },
 ];
