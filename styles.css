@@ -913,6 +913,18 @@ body {
     max-width: 18rem;
   }
 
+  .channel__title {
+    font-size: 0.4rem;
+  }
+
+  .channel__label {
+    font-size: 0.4rem;
+    letter-spacing: 0.02rem;
+    color: var(--yellow);
+    text-shadow: var(--outline);
+    padding: 0 0.2rem;
+  }
+
   .site-footer {
     font-size: 0.4rem;
     margin: 0;
