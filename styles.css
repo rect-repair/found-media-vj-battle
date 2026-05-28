@@ -832,7 +832,7 @@ body {
 
   .panel__content {
     /* max-height: calc(100vh - 6.9rem); */
-    max-height: 49vh;
+    max-height: 46vh;
     /* height: 100%; */
     margin: 0.2rem;
     flex-direction: row;
@@ -884,15 +884,15 @@ body {
 @media (max-width: 480px) {
   .panel__diary {
     font-size: 0.4rem;
-    min-height: 40vh;
+    min-height: 39vh;
     max-width: 100%;
   }
 
   .panel__content {
     /* max-height: calc(100vh - 6.9rem); */
     /* height: 100%; */
-    min-height: 82vh;
-    max-height: 84vh;
+    min-height: 81.2vh;
+    /* height: 79vh; */
     margin: 0.2rem;
     flex-direction: column;
     justify-content: flex-start;
@@ -900,7 +900,7 @@ body {
   }
 
   .panel__screen--green {
-    min-height: 88vh;
+    min-height: 90vh;
     /* max-height: 95vh; */
   }
 
@@ -920,13 +920,11 @@ body {
   .channel__label {
     font-size: 0.4rem;
     letter-spacing: 0.02rem;
-    color: var(--yellow);
-    text-shadow: var(--outline);
     padding: 0 0.2rem;
   }
 
   .site-footer {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     margin: 0;
   }
 }
