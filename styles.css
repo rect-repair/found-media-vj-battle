@@ -1,5 +1,23 @@
 /* FOUND VIDEO VJ BATTLE ROYALE — flat Tetris-battle archive UI */
 
+@font-face {
+  font-family: "Connection";
+  src: url("fonts/Connection-arMJ copy.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pixelbasel";
+  src: url("fonts/Pixelbasel.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Retganon";
+  src: url("fonts/retganon copy.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   --green-screen: #00ff00;
   --green-text: #e8e8e8;
@@ -20,7 +38,13 @@
   --border: var(--frame-w-inner) solid var(--frame-white);
   --gray-border: var(--border);
   --pixel: "Press Start 2P", "Courier New", monospace;
-  --dot-gothic: "DotGothic16", sans-serif;
+  /* Diary/about body font.
+       "Connection"   — Connection-arMJ.otf
+       "Pixelbasel"   — Pixelbasel.ttf
+       "Retganon"     — retganon.ttf
+       "DotGothic16"  — original CJK pixel font (Google Fonts)
+  */
+  --dot-gothic: "Pixelbasel", "DotGothic16", sans-serif;
   --outline: 0 -0.0625rem 0 #000,
     0 0.0625rem 0 #000,
     0 0.125rem 0 #000,
@@ -187,7 +211,7 @@ body {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
-  font-size: 0.5rem;
+  font-size: 0.58rem;
   line-height: 1.8;
   white-space: pre-wrap;
   word-break: break-word;
@@ -215,6 +239,10 @@ body {
 .diary-list li {
   position: relative;
   margin: 0.15rem 0;
+}
+
+.panel__diary:lang(en) .diary-list li {
+  line-height: 1.3;
 }
 
 .diary-list--ul li::before {
@@ -837,16 +865,16 @@ body {
   padding: 1rem 0.85rem 0.85rem;
   color: var(--green-text);
   font-family: var(--dot-gothic);
-  font-size: 0.55rem;
+  /* font-size: 0.65rem; */
   line-height: 1.8;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .info-modal__title {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   font-family: inherit;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--yellow);
   text-shadow: var(--outline);
   text-align: center;
@@ -854,8 +882,8 @@ body {
   letter-spacing: 0.05em;
 }
 
-.info-modal__body {
-  margin: 0 0 1rem;
+.info-modal__body:last-of-type {
+  margin-bottom: 0;
 }
 
 .info-modal__body a {
@@ -870,12 +898,24 @@ body {
 }
 
 .info-modal__actions {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .info-modal__close {
   min-width: 5rem;
+}
+
+.close__border {
+  padding: 0rem 0.2rem;
+  background-color: var(--frame-mid);
+}
+
+.round-label-bg {
+  padding-bottom: 0.1rem;
+  width: 100%;
+  background-color: var(--gray);
 }
 
 /* .hud__title-line--sm {
@@ -940,7 +980,7 @@ body {
 
 .site-footer {
   flex-shrink: 0;
-  text-align: left;
+  text-align: center;
   margin: 0.05rem 0.2rem 0.2rem;
   padding-top: 0;
   font-size: 0.4rem;
@@ -953,19 +993,64 @@ body {
 
 }
 
+/* ─── Per-language typography ─── */
+
+.panel__diary:lang(zh) {
+  font-family: "DotGothic16", sans-serif;
+}
+
+.info-modal__body:lang(zh) {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 0.58rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.panel__diary:lang(en) {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  /* font-stretch: 150%; */
+}
+
+.info-modal__body:lang(en) {
+  font-size: 0.73rem;
+  line-height: 1.3;
+  margin: 0 0 0.4rem
+}
+
+
 /* ─── Responsive: stack on narrow screens ─── */
 
 @media (max-width: 880px) {
+
+  /* Undo the desktop "everything fits viewport via flex chain" constraints
+     so the stacked layout can grow naturally and the page can scroll. */
+  html,
+  body {
+    height: auto;
+  }
+
+  #not-p5 {
+    position: relative;
+    display: block;
+    height: auto;
+    min-height: auto;
+  }
+
   .battle-screen {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     align-items: stretch;
     padding-top: 0.5rem;
+    flex: none;
+    height: auto;
     min-height: auto;
+    overflow: visible;
   }
 
   .panel {
     height: auto;
+    min-height: auto;
     margin: 0.3rem;
   }
 
@@ -974,18 +1059,26 @@ body {
     margin-top: 0.3rem;
   }
 
+  .panel__outer,
+  .panel__screen {
+    flex: none;
+    min-height: auto;
+  }
+
   .video-wrapper {
     margin-top: 0;
-    width: 100%;
+    width: auto;
+    flex-shrink: 1;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .panel__content {
-    /* max-height: calc(100vh - 6.9rem); */
+    flex: none;
+    min-height: auto;
     max-height: 46vh;
-    /* height: 100%; */
     margin: 0.2rem;
     flex-direction: row;
     justify-content: space-around;
@@ -993,13 +1086,14 @@ body {
   }
 
   .panel__diary {
-    /* max-width: 55%; */
     min-width: 50%;
   }
 
   .hud {
     width: 100%;
     height: auto;
+    min-height: auto;
+    flex: none;
     padding: 0 1rem;
     min-width: unset;
     border-left: none;
@@ -1031,22 +1125,38 @@ body {
   }
 
   .hud__meters {
-    margin-top: 0;
+    /* margin-top: 1; */
+    /* overflow: hidden; */
+  }
+
+  /* Responsive English sizing (Chinese sizes stay the same as desktop) */
+  .panel__diary:lang(en) {
+    font-size: 0.6rem;
+  }
+
+  .info-modal__body:lang(en) {
+    font-size: 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .panel__diary {
-    font-size: 0.4rem;
+    font-size: 0.52rem;
     min-height: 39vh;
     max-width: 100%;
   }
 
+  .panel__diary:lang(en) {
+    font-size: 0.65rem;
+  }
+
+  .info-modal__body:lang(en) {
+    font-size: 0.55rem;
+  }
+
   .panel__content {
-    /* max-height: calc(100vh - 6.9rem); */
-    /* height: 100%; */
     min-height: 81.2vh;
-    /* height: 79vh; */
+    max-height: none;
     margin: 0.2rem;
     flex-direction: column;
     justify-content: flex-start;

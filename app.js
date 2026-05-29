@@ -98,6 +98,11 @@
     el.langToggle.setAttribute("aria-pressed", diaryLocale === "zh" ? "true" : "false");
   }
 
+  function syncDiaryLang() {
+    if (el.redDiary) el.redDiary.lang = diaryLocale;
+    if (el.blueDiary) el.blueDiary.lang = diaryLocale;
+  }
+
   function toggleDiaryLocale() {
     diaryLocale = diaryLocale === "zh" ? "en" : "zh";
     try {
@@ -106,6 +111,7 @@
       /* ignore */
     }
     updateLangToggleButton();
+    syncDiaryLang();
     const r = rounds[current];
     if (!r) return;
     renderDiary("red", r.red, r.round);
@@ -624,6 +630,7 @@
   el.aboutBackdrop?.addEventListener("click", closeAboutModal);
 
   updateLangToggleButton();
+  syncDiaryLang();
   el.langToggle?.addEventListener("click", toggleDiaryLocale);
 
   el.btnPrev.addEventListener("click", () => go(-1));

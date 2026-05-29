@@ -7,7 +7,8 @@
   <title>FOUND VIDEO VJ BATTLE ROYALE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script> -->
   <script src="p5.js"></script>
@@ -41,9 +42,13 @@
                       allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
                       allowfullscreen></iframe>
                     <div class="vid-ctrl" id="red-vid-ctrl" hidden>
-                      <button class="vid-ctrl__btn vid-ctrl__play" id="red-vid-play" type="button" aria-label="Play/Pause">▶</button>
-                      <div class="vid-ctrl__bar" id="red-vid-bar"><div class="vid-ctrl__bar-fill" id="red-vid-fill"></div></div>
-                      <button class="vid-ctrl__btn vid-ctrl__fs" id="red-vid-fs" type="button" aria-label="Fullscreen">⛶</button>
+                      <button class="vid-ctrl__btn vid-ctrl__play" id="red-vid-play" type="button"
+                        aria-label="Play/Pause">▶</button>
+                      <div class="vid-ctrl__bar" id="red-vid-bar">
+                        <div class="vid-ctrl__bar-fill" id="red-vid-fill"></div>
+                      </div>
+                      <button class="vid-ctrl__btn vid-ctrl__fs" id="red-vid-fs" type="button"
+                        aria-label="Fullscreen">⛶</button>
                     </div>
                   </div>
                   <div class="channel__switcher" id="red-channel">
@@ -80,7 +85,9 @@
           <div class="outer hud__outer">
             <div class="hud__round-box">
               <div class="inner hud__inner">
-                <span class="hud__round-text" id="round-label">Round 1</span>
+                <div class="round-label-bg">
+                  <span class="hud__round-text" id="round-label">Round 1</span>
+                </div>
               </div>
             </div>
           </div>
@@ -155,9 +162,13 @@
                       allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy"
                       allowfullscreen></iframe>
                     <div class="vid-ctrl" id="blue-vid-ctrl" hidden>
-                      <button class="vid-ctrl__btn vid-ctrl__play" id="blue-vid-play" type="button" aria-label="Play/Pause">▶</button>
-                      <div class="vid-ctrl__bar" id="blue-vid-bar"><div class="vid-ctrl__bar-fill" id="blue-vid-fill"></div></div>
-                      <button class="vid-ctrl__btn vid-ctrl__fs" id="blue-vid-fs" type="button" aria-label="Fullscreen">⛶</button>
+                      <button class="vid-ctrl__btn vid-ctrl__play" id="blue-vid-play" type="button"
+                        aria-label="Play/Pause">▶</button>
+                      <div class="vid-ctrl__bar" id="blue-vid-bar">
+                        <div class="vid-ctrl__bar-fill" id="blue-vid-fill"></div>
+                      </div>
+                      <button class="vid-ctrl__btn vid-ctrl__fs" id="blue-vid-fs" type="button"
+                        aria-label="Fullscreen">⛶</button>
                     </div>
                   </div>
                   <div class="channel__switcher" id="blue-channel">
@@ -191,45 +202,45 @@
 
   </div>
 
-  <div id="about-modal" class="info-modal" hidden role="dialog" aria-modal="true"
-    aria-labelledby="about-modal-title">
-    <button type="button" class="info-modal__backdrop" id="about-modal-backdrop"
-      aria-label="Close dialog"></button>
+  <div id="about-modal" class="info-modal" hidden role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <button type="button" class="info-modal__backdrop" id="about-modal-backdrop" aria-label="Close dialog"></button>
     <div class="info-modal__panel outer hud__outer">
       <div class="hud__border">
         <div class="info-modal__inner">
           <h2 id="about-modal-title" class="info-modal__title">about</h2>
-          <p class="info-modal__body">Found Media VJ Battle Royale (既有媒介VJ大战) is a browser-only audiovisual event that happened on 2026 April 26th, using publicly available internet videos as
-          VJ sources. Hosted by
-          <a href="https://rect.repair/" target="_blank" rel="noopener noreferrer">[[rect*]] repair</a>
-          and
-          UFO Terminal.
-          </br>
-          We split the venue in half and invited 24 VJs to battle head-to-head in two teams. Each round
-          lasted 10 minutes, and the audience voted by physically standing in front of the VJ they enjoyed
-          more.
-        </br>
-        The visual referneces spiraled across every corner of the internet. And because of the “browser only” rule, every VJ developed strange and highly improvised setups.
-      </br>
-      On this website we have asked every VJ to note down their creative process, thoughts and setup when participating in this event. 
-      </br>
-          We love the internet 🌐🥺 We all love being online!
-          This project might have a sequel ∠( ᐛ 」∠)</p>
-              </br>
-          Found Media VJ Battle Royale（既有媒介VJ大战）是一场仅使用浏览器进行演出的视听活动，于2026年4月26日举办。所有VJ素材必须使用公开互联网视频，由 [[rect*]] repair 与 UFO
-          Terminal 共同主办。
-    </br>
-          我们将整个场地一分为二，邀请24位VJ分成两队进行正面对决。每轮限时10分钟，观众通过实际站到（或者跳舞到）自己更喜欢的VJ前方进行投票。
-              </br>
-          整晚出现的视觉素材横跨互联网的每一个角落。而因为“只能使用浏览器”的规则，每位VJ都发展出了非常奇怪且高度即兴的演出方式与技术配置。
-              </br>
-          在这个网站中，我们邀请每位VJ记录下自己参与这场活动时的创作过程、想法与设备配置。
-              </br>
-          我们爱上网 🌐🥺！
-          这个项目也许还会有续作 ∠( ᐛ 」∠)
-          <div class="info-modal__actions outer hud__outer">
-            <div class="hud__border">
-              <button type="button" class="hud__btn info-modal__close" id="about-modal-close">Close</button>
+          <p class="info-modal__body" lang="en">Found Media VJ Battle Royale is a browser-only audiovisual event that
+            happened on
+            2026 April 26th, using publicly available internet videos as VJ sources. Hosted by
+            <a href="https://rect.repair/" target="_blank" rel="noopener noreferrer">[[rect*]] repair</a>
+            and UFO Terminal.
+          </p>
+          <p class="info-modal__body" lang="en">We split the venue in half and invited 24 VJs to battle head-to-head in
+            two
+            teams. Each round lasted 10 minutes, and the audience voted by physically standing in front of the VJ they
+            enjoyed more.</p>
+          <p class="info-modal__body" lang="en">The visual referneces spiraled across every corner of the internet. And
+            because of the “browser only” rule, every VJ developed strange and highly improvised setups.</p>
+          <p class="info-modal__body" lang="en">On this website we have asked every VJ to note down their creative
+            process,
+            thoughts and setup when participating in this event.</p>
+          <p class="info-modal__body" lang="en">We love the internet 🌐🥺 We all love being online! This project might
+            have
+            a sequel ∠( ᐛ 」∠)</p> <br>
+          <p class="info-modal__body" lang="zh">既有媒介 VJ 大战是一场仅使用浏览器进行演出的视听活动，于 2026 年 4 月 26 日举办。所有 VJ 素材必须使用公开互联网视频，由
+            [[rect*]]
+            repair 与 UFO
+            Terminal 共同主办。</p>
+          <p class="info-modal__body" lang="zh">我们将整个场地一分为二，邀请 24 位 VJ 分成两队进行正面对决。每轮限时 10 分钟，观众通过实际站到（或者跳舞到）自己更喜欢的 VJ
+            前方进行投票。
+          </p>
+          <p class="info-modal__body" lang="zh">整晚出现的视觉素材横跨互联网的每一个角落。而因为“只能使用浏览器”的规则，每位 VJ 都发展出了非常奇怪且高度即兴的演出方式与技术配置。</p>
+          <p class="info-modal__body" lang="zh">在这个网站中，我们邀请每位 VJ 记录下自己参与这场活动时的创作过程、想法与设备配置。</p>
+          <p class="info-modal__body" lang="zh">我们爱上网 🌐🥺！这个项目也许还会有续作 ∠( ᐛ 」∠)</p>
+          <div class="info-modal__actions">
+            <div class="outer hud__outer">
+              <div class="close__border">
+                <button type="button" class="hud__btn info-modal__close" id="about-modal-close">Close</button>
+              </div>
             </div>
           </div>
         </div>

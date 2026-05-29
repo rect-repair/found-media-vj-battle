@@ -1,7 +1,7 @@
 /** Bilingual diary text — zh/en per round-side key (e.g. "1-red") */
 const DIARY_I18N = {
   "1-red": {
-    zh: `[梁效铭 Liang Xiaoming](https://www.instagram.com/ming.lxm)
+    zh: `[梁效铭](https://www.instagram.com/ming.lxm)
 刘华强买瓜 VJ 思路
 
 只要快捷键按的快，VJ 就够流畅：切换标签页 (Command+数字) + 全屏 (F) + 切换进度条 (数字)
@@ -20,7 +20,7 @@ Command+数字切换 = 切换到对应标签，直接按数字对应到视频的
 本人几乎没有任何 VJ 技能但是参与了这次 VJ 大战，虽然没有取胜，但是好在也没有落败。网络视频的内容既然已经如此丰富，竟然现在才出现第一次 VJ 大战。相比于运用生成式的 VJ 技巧，用纯粹的个人取向，选择网络现成视频进行 VJ 是否为现场带来了更好的视听体验？
 
 虽然我运用的视频也是有由 AI 生成的，但是一个 03 年电视剧的记忆和引发的梗 (meme) 所带来的混合感受，是即时生成式 VJ 无法带来的。我们是否有必要创造那么多高清的视觉内容，或许是在生成式技术发展的当下，现成视频的价值产生了微妙的升值，引发了这场大战。`,
-    en: `[梁效铭 Liang Xiaoming](https://www.instagram.com/ming.lxm)
+    en: `[Liang Xiaoming](https://www.instagram.com/ming.lxm)
 VJ concept: Liu Huaqiang Buying Watermelons
 
 As long as the hotkeys are fast enough, VJing feels smooth: switch tabs (Command+number) + fullscreen (F) + jump the progress bar (number keys).
@@ -41,7 +41,7 @@ I had almost no VJ skills, but still joined this VJ battle. I did not win, but a
 Some of my clips were AI-generated too, but the mixed feeling carried by memories from a 2003 TV drama and the memes it spawned is something real-time generative VJ cannot replicate. Do we really need to produce so much ultra-HD visual content? Perhaps as generative tech advances, the value of existing video has subtly appreciated, and that helped trigger this battle.`
   },
   "1-blue": {
-    zh: `过去 15 年里，我感觉自己一直在慢慢为这样的活动做准备。早在 2000 年代末，我在加州 Davis 的 KDVS 电台做节目时，几乎把时间都花在旧货店收集 VHS 录像带上，只为在节目里播放那些奇怪的声音。后来我很快转向在网上寻找奇怪且一次性的影像。我发现了算法兔子洞的乐趣，也沉迷于 YouTube 推荐视频里越陷越深。曾有那么短暂的一段时间，相关视频网络几乎是确定性的：只要你记得链条中的某一个视频，就能重新进入围绕它形成的整张关联网络。
+    zh: `过去 15 年里，我感觉自己一直在慢慢为这样的活动做准备。早在 2000 年代末，我在 UC Davis 的 KDVS 电台做节目时，几乎把时间都花在旧货店收集 VHS 录像带上，只为在节目里播放那些奇怪的声音。后来我很快转向在网上寻找奇怪且一次性的影像。我发现了算法兔子洞的乐趣，也沉迷于 YouTube 推荐视频里越陷越深。曾有那么短暂的一段时间，相关视频网络几乎是确定性的：只要你记得链条中的某一个视频，就能重新进入围绕它形成的整张关联网络。
 
 也许是受了 [early embedded YouTube DJ sites](http://twoyoutubevideosandamotherfuckingcrossfader.com/) 的影响，我开始围绕嵌入式 YouTube 视频做网站。有些更像雕塑式嵌入（[1](https://www.youtube.com/watch?v=Jr8vH4E4P-4), [2](https://www.youtube.com/watch?v=y2X7hAgR4jI), [3](https://www.youtube.com/watch?v=kLQ64IkooUs), [4](https://www.youtube.com/watch?v=AdgBRAISQ64)）；但我也想做能帮助我制作循环、序列和其他效果的网站，用来基于流数据生成演出（[1](https://www.youtube.com/watch?v=tdedUbqxxiU), [2](https://www.youtube.com/watch?v=uEyrC0R_ZwM)）。我做了不少可用于演出的网站，但实际上只在制作 [album material](https://bradgrammar.bandcamp.com/track/rayon-life) 时真正用过。
 
@@ -246,7 +246,7 @@ My videos mainly came from a set of keyword/search directions:
 
 The performance setup used two PCs, each converting HDMI to composite video and feeding a video mixer (Cypress CMX-107), plus a DV camcorder (Sony HC-27E) for video feedback.
 
-For video mixer techniques, see: [这个教程](https://www.youtube.com/watch?v=cgT_xNV_ju4)
+For video mixer techniques, see: [this tutorial](https://www.youtube.com/watch?v=cgT_xNV_ju4)
 The Cypress CMX-107 manual is available at [globalmediapro](https://www.globalmediapro.com/dp/A2I627/Cypress-CMX-107-Video-Mixer/).
 
 The full signal chain ran in PAL. Final output was sent through a cheap composite-to-HDMI upscaler into a standard 1080p HDMI signal for the venue. Using standard HDMI as the interface boundary separated performer/venue responsibilities, reduced complexity, and stayed compatible with most theater setups.
@@ -267,7 +267,7 @@ Visual target: NES Super Mario Bros. visuals that audiences are more likely to r
 Keyword: Electric Sheep
 Visual target: colorful, fluid fractal patterns
 
-Keyword: 马戏团 FC
+Keyword: Circus FC
 Visual target: NES Circus Charlie visuals that audiences may recognize more easily
 
 Keyword: winamp visualization
@@ -291,16 +291,18 @@ VJ 视频顺序清单：
 At first I wanted to run a continuous stream of old weird TV videos: all kinds of vintage media from the old television era, such as TV interviews, news fragments, and slow TV ranging from a few seconds to several hours. I prepared a playlist with more than 120 videos (though only four actually played smoothly on site). The plan relied on rapid timeline switching plus a custom browser plugin to produce manic effect edits like fast cuts, strobe, tearing, and mosaic distortion.
 
 VJ playback sequence:
-- Started with a classic weird TV clip - "Weird TV appeared early 1995 on C-band satellite..." (full archive description kept in source).
+- Started with a classic weird TV clip — Weird TV appeared early 1995 on C-band satellite, a collage of original content produced by Chuck Cirino, Todd Stevens and Arthur Maturo, as well as classic video clips from various video archives. No doubt, Weird TV is Weird! (And was creepy to watch late night on satellite TV). Recorded 3/12/1995, Telstar 302, Tr 4 9PM PST; Receiver GI 550i, Wineguard 10' C/Ku dish.
 - The network started collapsing, auto-switch to next video failed, and it got stuck on this clip - Portal soundtrack.
 - Discovery Channel Beyond 2000 Wearable Computers 1992 - Ancient wearable computer technology was supposed to revolutionize computing back in 1992 don't you know... The plugin also crashed the browser due to aggressive operations.
 - After emergency recovery, I had to randomly pick a clip from the list. We were already in the last 4+ minutes of the battle, and I happened to pick this wonderfully cursed dance video. The plugin had fully broken and lost control, so I had to fall back to basic hotkeys for toggling effects and timeline jumps to catch the beat: Ballet Zoom "Cats".`
   },
   "4-blue": {
     zh: `艺术 & 伪科学
+
 我放了一些看不太懂的 DNA 和一些数理化相关的讲解视频，夹带了一点阴间 cursed video 的内容（但也担心有的过于极端可能现场会接受不了，就没有放）。放完之后，有人问我是不是学生物的，所以才会放这些视频。我说不是，只是因为它们看起来漂亮。似乎我常常停留在表象，而没想过去探索更深的道理。那是否跨学科就可以简单挪移别人的形式就声称为自己的创作呢？当然只是说我，看到现场各位对于技术的使用已经完全到了一个学科的程度。
 
 Vibe Coding
+
 来之前我以为只是跟着节拍放抽象视频，调节时间轴。直到休息时间瞄到现场一些大神的屏幕，各种节点，软件…… 完了，于是临时抱佛脚求救 Claude 帮我写一个 Chrome 插件。做了一些视频跳帧，检测现场音乐节拍的功能，不过还是出了一些问题：
 - 没有提前打开好多个页面，导致切换时加载过长，打断节奏
 - 忘记关掉手机上的视频，演出时占用梯子带宽
@@ -309,18 +311,22 @@ Vibe Coding
 过程中还认识了一位来做试听空间感官体验相关田野调查的朋友，问了我一些关于 AI 在创作中占比的问题，挺有趣的。
 
 黑客 & 观看媒介
+
 这晚太欢乐了，我爱看抽象视频，以及受到一点认知上的冲击，网络在线视频居然可以被这样使用/观看。即使是我们观念里认为是固定的一个网址，也可以被扭曲，重叠，涂抹，解构，重组。像是篡改了某些框架和规则，也像是创造了一种新的浏览媒体方式。现场气氛也很好，我全程几乎都在锐舞，手里还突然多了一罐啤酒（一位女生临走前给的），太酷了。
 
 [视频合集 (YouTube playlist)](https://www.youtube.com/playlist?list=PLG2qG7-05zmAvhh_Oz0adX4GWLSm_Q3Io)
 
 [Chrome 插件: youtube-beat-scrubber](https://github.com/voidinsea/youtube-beat-scrubber)
+
 在 Chrome 输入 chrome://extensions
 开启 Develop mode
 选择 Load unpacked，上传整个文件夹`,
     en: `Art & Pseudoscience
+
 I played some hard-to-parse DNA videos and various math/physics/chemistry explainers, plus a little bit of cursed "underworld" internet content (though I held back some extreme clips in case the crowd could not take them). Afterward, someone asked if I studied biology, which is why I chose these videos. I said no - I just think they look beautiful. I seem to often stay at the level of surface appearance instead of digging for deeper principles. So can interdisciplinary work simply borrow someone else's form and claim it as your own creation? I am only talking about myself here; seeing everyone's technical use on site felt like a whole discipline in itself.
 
 Vibe Coding
+
 Before coming I thought it would just be abstract videos on beat with timeline control. During the break I glanced at some top players' screens - nodes, software stacks, everything... I panicked, then did last-minute cramming and asked Claude to help me write a Chrome extension. It added frame-jump and beat-detection functions, but I still hit issues:
 - I did not open enough pages in advance, so switching caused long loads and broke the rhythm
 - I forgot to close videos on my phone, which consumed VPN bandwidth during performance
@@ -329,11 +335,13 @@ Before coming I thought it would just be abstract videos on beat with timeline c
 During the event I also met someone doing field research on audiovisual spatial perception, and we talked about how much AI should count inside creative work. Very interesting.
 
 Hacking & Viewing Media
+
 That night was so fun. I love abstract videos, and I also had a cognitive shock: online streaming videos can actually be used/viewed like this. Even what we think is a fixed URL can be twisted, layered, smeared, deconstructed, and recombined. It felt like tampering with existing frameworks and rules, while also inventing a new way of browsing media. The on-site atmosphere was great too. I raved almost the whole time, and at some point a can of beer suddenly appeared in my hand (a girl gave it to me before leaving). Super cool.
 
-[视频合集 (YouTube playlist)](https://www.youtube.com/playlist?list=PLG2qG7-05zmAvhh_Oz0adX4GWLSm_Q3Io)
+[YouTube playlist](https://www.youtube.com/playlist?list=PLG2qG7-05zmAvhh_Oz0adX4GWLSm_Q3Io)
 
-[Chrome 插件: youtube-beat-scrubber](https://github.com/voidinsea/youtube-beat-scrubber)
+[Chrome plug-in: youtube-beat-scrubber](https://github.com/voidinsea/youtube-beat-scrubber)
+
 In Chrome, enter chrome://extensions
 Enable Develop mode
 Choose Load unpacked and upload the whole folder`
@@ -342,12 +350,15 @@ Choose Load unpacked and upload the whole folder`
     zh: `原初构想：
 视频直接从bilibili首页，知识/体育/科技/游戏里面现找
 找到比较好笑，但跟音乐毫无关系的标题点开靠调视频速度来卡节拍,用不同的放大方法解构画面，但用鼠标引导视线，用现有画面中的所有的文字，图像，甚至桌面元素重新构建自己的叙事。
+
 --- 以上是理想状态 ---
+
 实际：显然现场完全听歌听High, 忘记了挑选视频这件事情，沉迷在节奏当中无法自拔（叹气 而且！我因为注意力完全被bilibili的"正在缓冲…"带走，还发现静音键很有意思，好像最后的时间都花在：怎么卡上"正在缓冲…"的图标？？？以至于莫名其妙停了很久，sry，我真的后面跟自己玩了起来，不顾观众死活。
-视频选择
+
+视频选择:
 在我原本的方案里。。。视频还是以我内心听到的音乐和当场选择的频道有关系。。所以没有找太多准备（除了稍微训练了一下推荐流）但！事实证明这件事情现场做太极限了hhh
-准备的视频列表：
-现场用到：
+
+准备的视频列表:
 - 散度与旋度：麦克斯韦方程组、流体等所用到的语言
 - 谁能在无尽尸潮中存活更久？（开场，有红蓝大战关键词）
 - 小伙骑行阿里地区，艰难翻过5190那根拉山。。。（没用上）
@@ -359,12 +370,15 @@ Choose Load unpacked and upload the whole folder`
     en: `Original concept:
 Pull videos directly from the Bilibili homepage, searching live across Knowledge/Sports/Tech/Games.
 Open titles that are funny but unrelated to music, then match beats by changing playback speed; deconstruct visuals through different zoom methods; use the mouse to guide gaze; and rebuild my own narrative from all existing text, images, and even desktop elements inside the frame.
+
 --- That was the ideal state ---
+
 Reality: obviously I got completely high on the music on site and forgot the whole "selecting videos" thing. I was totally immersed in rhythm (sigh). Also! My attention got fully hijacked by Bilibili's "buffering..." message. I even found the mute key interesting. It felt like my final minutes were spent on one problem: how to sync to the "buffering..." icon??? So I weirdly paused for a long time. Sorry - I basically started playing with myself toward the end and ignored the audience.
+
 Video choices:
 In my original plan... video choice should still relate to the music I heard internally and the channels I picked on site... so I did not prepare much (except some light training of recommendation flow). But! It turns out doing this fully live was too extreme, hhh.
-Prepared list:
-Used on site:
+
+Prepared video list:
 - Divergence and Curl: the language used in Maxwell equations, fluid dynamics, etc.
 - Who can survive longer in endless zombie waves? (opening clip, has red-vs-blue battle keywords)
 - A young guy biking in Ali region, struggling over 5190 m Genla Mountain... (unused)
@@ -377,6 +391,7 @@ I really did pick videos randomly... so...`
   "5-blue": {
     zh: `Theme：Slice 0023
 Source：Youtube
+
 为了找到搜索浏览量低于300，最好只有20以下甚至无人播放的视频，以0023为锚点，我搜索了诸如：IMG 0023，MOV 0023，test 0023 等未被命名直接上传，仅用于个人存档使用的作品。它们都是未经处理的私人化视频影像，公开但没有传播目的，因此都是全然野生的原始素材，由此作为我的「0023切片」VJ主题。
 搜索结果大多是几年前的作品，可以看到数学课，孩子记录，各种运动记录，个人或者小乐队自己的音乐排练，学校舞台记录，小动物视频。无数人普通而丰富的生活的一瞥。Pure existence in the digital wilderness.
 
@@ -391,6 +406,7 @@ Search List:
 我将其中有意思的存到我的 [search 0023 播放列表](https://www.youtube.com/playlist?list=PLSygw1rsTz1vlb3Pf4hoSZSR92sxs-hx9)，并根据视频性质进行了分类。`,
     en: `Theme: Slice 0023
 Source: Youtube
+
 To find videos with fewer than 300 views - ideally under 20 or even zero - I used 0023 as an anchor and searched terms like IMG 0023, MOV 0023, test 0023, etc. These are unnamed direct uploads, usually just for personal archive purposes. They are unprocessed private video traces: public, but not intended for distribution. That is why they became the raw wild material for my "0023 Slice" VJ theme.
 Most results were from a few years ago: math classes, kids' recordings, various sports records, personal or small-band rehearsal clips, school stage documentation, and small-animal videos. A glimpse into countless ordinary yet richly textured lives. Pure existence in the digital wilderness.
 
@@ -402,7 +418,7 @@ Search List:
 - Bandicam 0023 (an old screen-recording software)
 - retro game 0023
 - GameTest 0023
-I saved interesting finds to my [search 0023 播放列表](https://www.youtube.com/playlist?list=PLSygw1rsTz1vlb3Pf4hoSZSR92sxs-hx9) and categorized them by video type.`
+I saved interesting finds to my [search 0023 playlist](https://www.youtube.com/playlist?list=PLSygw1rsTz1vlb3Pf4hoSZSR92sxs-hx9) and categorized them by video type.`
   },
   "6-red": {
     zh: `（正在写了！！`,
@@ -531,7 +547,7 @@ Pages used live in round 7:
 
 临时搓出来的外挂逻辑：
 【数字 1~9】切换各种效果滤镜
-  1 原视频画面   2 故障效果   3 反相   4 模糊   5 瞬时黑屏   6 黑白   7 彩色   8 线框   9 扭曲   0 色块
+1 原视频画面   2 故障效果   3 反相   4 模糊   5 瞬时黑屏   6 黑白   7 彩色   8 线框   9 扭曲   0 色块
 【X】抖动
 【N】对称镜像
 【B】切片位移
@@ -544,7 +560,7 @@ I tried it with a "whatever works, play whatever" mindset, and unexpectedly it a
 
 Last-minute extension logic:
 [Number keys 1-9] switch effect filters
-  1 original video   2 glitch   3 invert   4 blur   5 instant black   6 grayscale   7 color   8 wireframe   9 warp   0 color blocks
+1 original video   2 glitch   3 invert   4 blur   5 instant black   6 grayscale   7 color   8 wireframe   9 warp   0 color blocks
 [X] shake
 [N] mirror symmetry
 [B] sliced displacement
@@ -604,7 +620,7 @@ Structurally I split the round into sections: first, use a contrast-heavy openin
 What I cared about most was not complexity of effects, but whether clips could connect, whether visuals could track the beat, and whether I could pull things back when the room got out of control. For me this was more like an experiment in live operation logic.
 
 Opening
-- Guo Degang & Yu Qian "艺高人胆小": used for opening contrast. It creates an odd and funny dislocation against electronic club music. Operationally I did not go full-on immediately - mostly low opacity, light flashes, slowly raising atmosphere.
+- Guo Degang & Yu Qian "Yi Gao Ren Dan Xiao": used for opening contrast. It creates an odd and funny dislocation against electronic club music. Operationally I did not go full-on immediately - mostly low opacity, light flashes, slowly raising atmosphere.
 
 Part 1
 - Zuma high-level play / possible human-theory records: the main body of section one. Its excitement is immediate, good for big-beat pushes, with room for short flashes and black cuts. Empty shots, reverse patterning, and quick reactions turn a childhood game into a smooth rhythm machine.
@@ -614,7 +630,7 @@ Part 1
 Part 2
 - Perfume "Edge Driving remix": used to shift game/competition energy into a colder, harder-edged, more emotional electronic section. Night driving, stage, and electronic texture are ideal for mid-set recoloring.
 - Yena "Catch Catch" one-click outfit change: deliberately shifts crowd mood into something lighter, cuter, brighter to make a clear color transition. After prolonged high-speed competitive air-combat energy, this acts as a breathing channel switch.
-- [36-version comparison] "再生" (Perfume): this section works like a choral crowd montage. Many people made abstract and guichu remixes from "再生," including Mario-style and internet variants. Combining 36 versions feels like scattered online fragments suddenly turning into one chorus; with glitter-style flashing on site, it gets very festive.
+- [36-version comparison] "reborn" (Perfume): this section works like a choral crowd montage. Many people made abstract and guichu remixes from "reborn," including Mario-style and internet variants. Combining 36 versions feels like scattered online fragments suddenly turning into one chorus; with glitter-style flashing on site, it gets very festive.
 
 Ending
 - Lang Lang & Zhao Benshan "Horse Racing": used to close. It is direct, fast, and memorable. As an ending it does not need complexity - speed, memory hook, and clear closure are the key.
@@ -823,54 +839,56 @@ I used macOS built-in bash scripts, bash commands, and osascript (AppleScript) t
 - Civil Defense Public Information`,
     en: `[Fernando / sephfar.com](https://sephfar.com)
 
-I never had a clear concept for this performance direction. The whole process became more like a sandbox experiment: influenced by developing the video-control system, searching for source clips, and testing along the way, I kept exploring which effects would be more interesting or fitting for the live audience.
+I never had a clear idea on the direction where to take the performance. So the whole process was a sandbox influenced by the development of the system to control the videos, the different video searches and the testing along the way to see which effects were more interesting or suitable for a live audience.
 
-Searching for footage
-This was definitely the hardest part. I set myself one task: try to find videos with fewer than 5,000 views. But I realized that as someone who witnessed YouTube's birth and growth era, finding truly "hidden content" is now very difficult. There is no tool, filter, or mechanism that lets you sort by view count; you can only filter by upload date before some cutoff. On Bilibili, where I am much less familiar, results were similar.
+The search for videos: For sure the hardest aspect of the whole process. I put myself the task to try and find videos with less than 5000 views. And realized that, being someone that experienced the born and raising era of youtube, nowadays is very hard to find hidden content, there are no tools, filters or mechanisms to help you sort content by views, just to look at videos uploaded before a specific date. With Bilibili, which I am really unfamiliar with, the result was similar.
 
-What I was looking for
-I wanted to mainly use content unfamiliar to the audience. But I found it very hard to distinguish "truly obscure content" from "popular content uploaded by obscure accounts." There is also the issue of image quality and motion. Under current search algorithm limits, it is difficult to find genuinely obscure videos that are both dynamic enough and decent in quality. Of course, when you search "0-view videos" from a streamer or YouTuber, results are always clips that later reached tens or hundreds of thousands of views after discovery.
+What I was looking for: I wanted to use mainly content that the audience was not going to be familiar with. But found it very hard to discern what is content that is not popular from the one that is just popular content uploaded by an unpopular account. There was also the problem of quality and dynamicity, it was really hard to find dynamic content with a decent enough quality that was really unseen, using the current searching algorithms. And of course, every search for a streamer or youtuber looking to “0 views” videos, resulted in videos that, after that youtuber, were on the tens or hundreds of thousands views.
 
-After initial frustration, I shifted strategy and looked for content that is very familiar to me but completely unfamiliar to an international audience: 1990s Uruguayan TV programs. That meant footage quality not high but not terrible, with decent production, yet almost unrecognizable to non-Uruguayans.
+So after the initial frustration I decided to change the focus and go for content that would be really familiar for me, but completely unrecognizable for an international audience: Uruguayan TV content from the 90’s. That meant bad but not too bad quality, well produced but completely unrecognizable for non-uruguayans.
 
-From there I built my first batch of material around Los Tatitos (stop-motion shorts), Cacho Bochinche (a children's show mixing live hosts, puppets, and animation), and Americando (an educational show focused on Uruguayan rural culture and customs).
+With that I started building my first group of videos using “Los Tatitos” (stop motion short animations), “Cacho Bochinche” (one of those children TV shows mixing human hosts with puppets and animations), and “Americando” (A rural-focused divulgation show about Uruguayan culture and customs).
 
-Finding a narrative line
-I did have a starting point - honestly, that came the night before the event. So I began thinking about what kind of implicit narrative could be built through these clips. Up to that point my core theme was 90s childhood nostalgia, and within that same frame I thought of using narrative contrast by searching for 1990s anti-drug PSAs aimed at children. I found a set of fairly obscure videos with strong motion, dramatic tension, and just the right amount of awkwardness - enough to add narrative contrast and humor.
+The search for the narrative:
+I had a starting point and, being honest, it was the night before the event. So I started thinking about what kind of implicit narrative I could build on this content. So far my key theme was 90’s children nostalgia (taking out the Uruguayan factor whose purpose was different), so thinking about the same theme but narrative contrast, I thought about looking for 90’s anti-drug PSAs for children. And I found a group of fairly unrecognizable videos but with a great amount of dynamicity, drama and enough cringyness to bring both a narrative contrast and a humorous element to the performance.
 
-The overall arc was: transition from children's educational content centered on fun and culture toward children's educational content centered on fear and prohibition.
+The plan was to go from children educational content focused on fun and culture, to children education content based on fear and prohibition.
 
-Atmosphere-dependent content
-Because this was a VJ battle, I did not know in advance what style of music we would get, so I prepared impact-oriented options:
-- If atmosphere was calmer, ambient, and melodic, I prepared travel-themed clips: city scenes, natural landscapes, and people moving through urban space. I paired those with a Civil Defense public information video; some segments had a travel-like mood but in animated form.
-- If music was lighter and more playful, I prepared cat videos and dance clips from a children's TV show whose source I did not even check.
-- If music was strong and energetic, I had chicken dance and Shrek clips, with Shrek sped up to match rhythmic intensity.
+The mood based content: 
+Being a VJ battle and not knowing what was gonna be the music, I set myself with some impact-focused videos.
+- If the mood was more chill, ambience and melodic, I prepared some travel-based videos, with urban scenes, landscapes and people moving through cities. Paired with a “Civil Defense public information” video that had not so different vibes in some sections but it was animated.
+- If the music was more silly and playful I prepared some cat videos and some dances from a Children TV show that I didn’t even checked the origin.
+- If the music was intense and energetic I had the chicken dance video and shrek video which I could speed up to match the energy.
 
-The Shrek theory
-In the taxi to UFO, while thinking about the set, I realized: no matter the musical atmosphere, I would introduce Shrek at some point. Because when everything on screen is unfamiliar - even if interesting - the appearance of one symbol the audience already knows can be a powerful participation trigger. In the end, the music mood and Shrek timing matched perfectly.
+The Shrek theory: 
+While thinking about the performance, on the taxi to UFO, I started thinking that whatever was the case of the mood of the music, I was going to introduce the Shrek at some point. Because when everything that you see is unfamiliar, even if it's funny, the introduction of a symbol that the audience already know can be a really powerful tool for engagement.
 
-Note: during the performance, some videos failed to load correctly, and one auto-jumped to the next recommended clip, which forced me to improvise and adapt live.
+In the end, the music was perfect for Shrek time.
 
-System
-The original plan was to use both a browser script for direct video control and a TouchDesigner overlay for extra effects, all mapped to MIDI controller input. In the end I chose to use only the browser script and did not even open the TouchDesigner project. The browser script ran JavaScript through TamperMonkey; video switching used Ctrl+Tab (next tab) or Ctrl+Tab plus number keys to jump to specific tabs.
+NOTE: During the performance some of the videos didn’t load properly and one of them in particular skipped to the next video suggested, forcing some improvisation and adaptation on the go.
 
-Video groups
+The system:
+For the system the plan was to use both a browser script to directly control video and a TouchDesigner overlay for some extra effects, everything mapped to a MIDI Controller Input, which I’m more familiar with for the performance aspect. 
 
-Group 1: children's TV programs
+In the end I decided to just use the browser script and don’t even open the TouchDesigner project, but I’ll show both mappings here for the sake of proper documentation. 
+
+For the browser script I used a plug-in called TamperMonkey to run the javascript code and for transitioning between videos I decided to have every video open in different tabs and navigate using either ctrl+tab (next tab) or ctrl+tab+number for going to a specific one on the list.
+
+GROUP 1: Children TV shows
 - Americando | CORTINA INTRODUCTORIA (Teledoce Televisora Color)
 - LOS TATITOS VAN A LA ESCUELA - CANAL 4 URUGUAY
 - Los Tatitos - Capítulo 5. Vamos a compartir
 - Escuela en el fondo del mar (Cacho De La Cruz)
 - 洪恩小乌龟学美语 Franklin
 
-Group 2: awkward anti-smoking/anti-drug PSAs for children
+GROUP 2: Cringy anti-smoking PSA for children
 - Anti-Marijuana PSA: "Family Invention" (1993)
 - 1970s Canadian Anti Smoking PSA - Light Me Harry
 - Anti-Smoking PSA - Too Smart to Start (1990s)
 - Dying for a Smoke (1967)
 - Anti Smoking PSA - 90s
 
-Group 3: videos selected by live music atmosphere
+GROUP 3: Some vibe videos to pick depending on the music that is playing.
 - World's Greatest Train Ride Videos - Trans-America (1995)
 - Chicken Dance
 - "Can you dance like this" warm-up
@@ -916,7 +934,7 @@ MV list
 TD Web Render VJing
 The overall idea was to use TD Web Browser for real-time browser interaction, then build MIDI-controlled effects in TD (upper-left MIDI mapping block for quick linking/effect writing) plus my own audio-analysis blocks based on my habits (lower-left). During performance it behaved like a random-video radio plus short-video/live-room feed in real time. Mid-show there was a microphone input issue, so I switched to LFO, effectively letting the system run auto-BPM by itself.
 
-I used a long-video random YouTube site [astronaut.io](http://astronaut.io/#) and short-video [抖音](https://douyin.com). I overlaid these two random visual streams after color configuration to get a better color range. Then I chained a bunch of my usual 2D effects and mapped them to MIDI as needed: level/brightness, sat/saturation, bloom, noise filter, depth of field, etc. I also added some decorative "cheating" Ikeda-style visual switches.`
+I used a long-video random YouTube site [astronaut.io](http://astronaut.io/#) and short-video [Douyin](https://douyin.com). I overlaid these two random visual streams after color configuration to get a better color range. Then I chained a bunch of my usual 2D effects and mapped them to MIDI as needed: level/brightness, sat/saturation, bloom, noise filter, depth of field, etc. I also added some decorative "cheating" Ikeda-style visual switches.`
   },
   "11-red": {
     zh: `管付为模 Kuanfu Weimu
@@ -985,7 +1003,7 @@ video_vinyl_scratcher
 This is a browser extension that writes already-played video into RAM, then lets you drag a virtual turntable with the mouse to modulate the video's playhead, creating a scratch experience. The four red dots at the lower right define how much playback duration is covered by one full turntable rotation. The cover image in the center of the turntable is a direct still-frame thumbnail captured from the video at the moment the plugin is opened. Building this plugin was also a process of fighting against video platform loading strategies: due to lazy-loading, it is hard to read all frames that have not yet been played, so naturally it is hard to scratch those frames smoothly. (Painful.)
 
 Plugin demo download
-[百度云](https://pan.baidu.com/s/1n7qMDF7d8lZPJXiDx6F4rg?pwd=p3k2)
+[Baidu Cloud Drive](https://pan.baidu.com/s/1n7qMDF7d8lZPJXiDx6F4rg?pwd=p3k2)
 [Google Drive](https://drive.google.com/file/d/1OboSKjQiTsALiTKkaoC3rwKRmWD1G5QY/view?usp=drive_link)
 See the README manual inside the package for detailed usage instructions.`
   },
@@ -1019,31 +1037,4 @@ Also, on site I heard deimos say he only wanted to VJ what he personally liked, 
 Tools
 I only used hotkeys: < > , and the tab-switch key: ⌃Tab.`
   }
-};
-
-const DIARY_PRIMARY = {
-  "1-red": "zh",
-  "1-blue": "en",
-  "2-red": "zh",
-  "2-blue": "zh",
-  "3-red": "en",
-  "3-blue": "zh",
-  "4-red": "zh",
-  "4-blue": "zh",
-  "5-red": "zh",
-  "5-blue": "zh",
-  "6-red": "zh",
-  "6-blue": "zh",
-  "7-red": "zh",
-  "7-blue": "zh",
-  "8-red": "zh",
-  "8-blue": "zh",
-  "9-red": "zh",
-  "9-blue": "zh",
-  "10-red": "zh",
-  "10-blue": "zh",
-  "11-red": "zh",
-  "11-blue": "zh",
-  "12-red": "zh",
-  "12-blue": "zh"
 };
