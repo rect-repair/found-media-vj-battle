@@ -15,6 +15,10 @@ Open http://localhost:8080
 
 Diary panels and the about modal use **DotGothic16**; HUD chrome uses **Press Start 2P**. Both load from Google Fonts (see `index.html`).
 
+## Diary languages
+
+Use the **EN / 中文** button (top right) to toggle diary text. Translations live in `data/diary-i18n.js` (`DIARY_I18N` + `DIARY_PRIMARY`). Original Chinese diaries are kept verbatim for `zh`; English originals for John Brumley (and placeholder ceciliyazi) are kept for `en`.
+
 ## Add diary text
 
 Edit `data/rounds.js`:

@@ -68,6 +68,20 @@ body {
   z-index: 0;
 }
 
+.lang-toggle {
+  position: fixed;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 25;
+}
+
+.lang-toggle__btn {
+  min-width: 3.25rem;
+  padding: 0.25rem 0.35rem;
+  font-size: 0.45rem;
+  letter-spacing: 0.05em;
+}
+
 #not-p5 {
   position: absolute;
   inset: 0;

@@ -16,6 +16,12 @@
 
 <body>
   <div id="p5-canvas-container"></div>
+  <div class="lang-toggle outer hud__outer" id="lang-toggle-wrap">
+    <div class="hud__border">
+      <button type="button" id="lang-toggle" class="hud__btn lang-toggle__btn" aria-pressed="true"
+        aria-label="Switch diary language to English">EN</button>
+    </div>
+  </div>
   <div id="not-p5">
     <div class="battle-screen" role="application" aria-label="VJ Battle Royale archive">
       <!-- Left: Red team diary panel -->
@@ -209,6 +215,18 @@
       </br>
           We love the internet 🌐🥺 We all love being online!
           This project might have a sequel ∠( ᐛ 」∠)</p>
+              </br>
+          Found Media VJ Battle Royale（既有媒介VJ大战）是一场仅使用浏览器进行演出的视听活动，于2026年4月26日举办。所有VJ素材必须使用公开互联网视频，由 [[rect*]] repair 与 UFO
+          Terminal 共同主办。
+    </br>
+          我们将整个场地一分为二，邀请24位VJ分成两队进行正面对决。每轮限时10分钟，观众通过实际站到（或者跳舞到）自己更喜欢的VJ前方进行投票。
+              </br>
+          整晚出现的视觉素材横跨互联网的每一个角落。而因为“只能使用浏览器”的规则，每位VJ都发展出了非常奇怪且高度即兴的演出方式与技术配置。
+              </br>
+          在这个网站中，我们邀请每位VJ记录下自己参与这场活动时的创作过程、想法与设备配置。
+              </br>
+          我们爱上网 🌐🥺！
+          这个项目也许还会有续作 ∠( ᐛ 」∠)
           <div class="info-modal__actions outer hud__outer">
             <div class="hud__border">
               <button type="button" class="hud__btn info-modal__close" id="about-modal-close">Close</button>
@@ -221,6 +239,7 @@
 
   <script src="sketch.js"></script>
   <script src="data/rounds.js"></script>
+  <script src="data/diary-i18n.js"></script>
   <script src="app.js"></script>
 </body>
 

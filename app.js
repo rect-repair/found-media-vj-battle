@@ -5,6 +5,7 @@
   let blue_current = 0;
   let red_score = [];
   let blue_score = [];
+  let diaryLocale = localStorage.getItem("diaryLocale") === "en" ? "en" : "zh";
 
   const el = {
     roundLabel: document.getElementById("round-label"),
@@ -39,6 +40,7 @@
     aboutModal: document.getElementById("about-modal"),
     aboutClose: document.getElementById("about-modal-close"),
     aboutBackdrop: document.getElementById("about-modal-backdrop"),
+    langToggle: document.getElementById("lang-toggle"),
   };
 
   // Per-side current clip index, keyed by round index so going back to a
@@ -74,9 +76,45 @@
     return String(n).padStart(2, "0");
   }
 
-  function renderDiary(side, vj) {
+  function diaryKey(roundNum, side) {
+    return `${roundNum}-${side}`;
+  }
+
+  function getDiaryText(roundNum, side, vj) {
+    const key = diaryKey(roundNum, side);
+    const pack = typeof DIARY_I18N !== "undefined" ? DIARY_I18N[key] : null;
+    if (pack && pack[diaryLocale]) return pack[diaryLocale];
+    return vj.diary;
+  }
+
+  function updateLangToggleButton() {
+    if (!el.langToggle) return;
+    const switchTo = diaryLocale === "zh" ? "en" : "zh";
+    el.langToggle.textContent = switchTo === "en" ? "EN" : "中文";
+    el.langToggle.setAttribute(
+      "aria-label",
+      switchTo === "en" ? "Switch diary text to English" : "Switch diary text to Chinese"
+    );
+    el.langToggle.setAttribute("aria-pressed", diaryLocale === "zh" ? "true" : "false");
+  }
+
+  function toggleDiaryLocale() {
+    diaryLocale = diaryLocale === "zh" ? "en" : "zh";
+    try {
+      localStorage.setItem("diaryLocale", diaryLocale);
+    } catch (_) {
+      /* ignore */
+    }
+    updateLangToggleButton();
+    const r = rounds[current];
+    if (!r) return;
+    renderDiary("red", r.red, r.round);
+    renderDiary("blue", r.blue, r.round);
+  }
+
+  function renderDiary(side, vj, roundNum) {
     const diaryEl = side === "red" ? el.redDiary : el.blueDiary;
-    let html = formatDiary(vj.diary);
+    let html = formatDiary(getDiaryText(roundNum, side, vj));
     if (vj.code) {
       const hint = vj.codeHint
         ? `<p class="diary-code__hint">${escapeHtml(vj.codeHint)}</p>`
@@ -506,8 +544,8 @@
 
     el.redName.textContent = r.red.name;
     el.blueName.textContent = r.blue.name;
-    renderDiary("red", r.red);
-    renderDiary("blue", r.blue);
+    renderDiary("red", r.red, r.round);
+    renderDiary("blue", r.blue, r.round);
 
     renderChannel("red", r.red, index);
     renderChannel("blue", r.blue, index);
@@ -584,6 +622,9 @@
   el.aboutOpen?.addEventListener("click", openAboutModal);
   el.aboutClose?.addEventListener("click", closeAboutModal);
   el.aboutBackdrop?.addEventListener("click", closeAboutModal);
+
+  updateLangToggleButton();
+  el.langToggle?.addEventListener("click", toggleDiaryLocale);
 
   el.btnPrev.addEventListener("click", () => go(-1));
   el.btnNext.addEventListener("click", () => go(1));
