@@ -35,6 +35,10 @@
     blueChTitle: document.getElementById("blue-ch-title"),
     redWrapper: document.getElementById("red-video-wrapper"),
     blueWrapper: document.getElementById("blue-video-wrapper"),
+    aboutOpen: document.getElementById("about-open"),
+    aboutModal: document.getElementById("about-modal"),
+    aboutClose: document.getElementById("about-modal-close"),
+    aboutBackdrop: document.getElementById("about-modal-backdrop"),
   };
 
   // Per-side current clip index, keyed by round index so going back to a
@@ -565,6 +569,22 @@
     }
   }
 
+  function openAboutModal() {
+    if (!el.aboutModal) return;
+    el.aboutModal.hidden = false;
+    el.aboutClose?.focus();
+  }
+
+  function closeAboutModal() {
+    if (!el.aboutModal) return;
+    el.aboutModal.hidden = true;
+    el.aboutOpen?.focus();
+  }
+
+  el.aboutOpen?.addEventListener("click", openAboutModal);
+  el.aboutClose?.addEventListener("click", closeAboutModal);
+  el.aboutBackdrop?.addEventListener("click", closeAboutModal);
+
   el.btnPrev.addEventListener("click", () => go(-1));
   el.btnNext.addEventListener("click", () => go(1));
 
@@ -574,6 +594,10 @@
   el.blueChNext.addEventListener("click", () => flipClip("blue", 1));
 
   document.addEventListener("keydown", (e) => {
+    if (el.aboutModal && !el.aboutModal.hidden) {
+      if (e.key === "Escape") closeAboutModal();
+      return;
+    }
     if (e.key === "ArrowLeft") go(-1);
     if (e.key === "ArrowRight") go(1);
   });

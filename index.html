@@ -7,7 +7,7 @@
   <title>FOUND VIDEO VJ BATTLE ROYALE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js" defer></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script> -->
   <script src="p5.js"></script>
@@ -105,12 +105,15 @@
           </div>
         </div>
 
-        <h1 class="hud__title" aria-label="Found Video VJ Battle Royale">
-          <span class="hud__title-line">FOUND</span>
-          <span class="hud__title-line">VIDEO</span>
-          <span class="hud__title-line hud__title-line--vj">VJ</span>
-          <span class="hud__title-line">BATTLE</span>
-          <span class="hud__title-line hud__title-line--sm">ROYALE</span>
+        <h1 class="hud__title">
+          <button type="button" class="hud__title-btn" id="about-open" aria-haspopup="dialog"
+            aria-controls="about-modal" aria-label="Found Video VJ Battle Royale — event background">
+            <span class="hud__title-line">FOUND</span>
+            <span class="hud__title-line">VIDEO</span>
+            <span class="hud__title-line hud__title-line--vj">VJ</span>
+            <span class="hud__title-line">BATTLE</span>
+            <span class="hud__title-line hud__title-line--sm">ROYALE</span>
+          </button>
         </h1>
 
         <div class="hud__meters" aria-hidden="true">
@@ -180,6 +183,40 @@
         // 2026.4.26 // by joanna, viola, chen xin</span>
     </footer>
 
+  </div>
+
+  <div id="about-modal" class="info-modal" hidden role="dialog" aria-modal="true"
+    aria-labelledby="about-modal-title">
+    <button type="button" class="info-modal__backdrop" id="about-modal-backdrop"
+      aria-label="Close dialog"></button>
+    <div class="info-modal__panel outer hud__outer">
+      <div class="hud__border">
+        <div class="info-modal__inner">
+          <h2 id="about-modal-title" class="info-modal__title">about</h2>
+          <p class="info-modal__body">Found Media VJ Battle Royale (既有媒介VJ大战) is a browser-only audiovisual event that happened on 2026 April 26th, using publicly available internet videos as
+          VJ sources. Hosted by
+          <a href="https://rect.repair/" target="_blank" rel="noopener noreferrer">[[rect*]] repair</a>
+          and
+          UFO Terminal.
+          </br>
+          We split the venue in half and invited 24 VJs to battle head-to-head in two teams. Each round
+          lasted 10 minutes, and the audience voted by physically standing in front of the VJ they enjoyed
+          more.
+        </br>
+        The visual referneces spiraled across every corner of the internet. And because of the “browser only” rule, every VJ developed strange and highly improvised setups.
+      </br>
+      On this website we have asked every VJ to note down their creative process, thoughts and setup when participating in this event. 
+      </br>
+          We love the internet 🌐🥺 We all love being online!
+          This project might have a sequel ∠( ᐛ 」∠)</p>
+          <div class="info-modal__actions outer hud__outer">
+            <div class="hud__border">
+              <button type="button" class="hud__btn info-modal__close" id="about-modal-close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="sketch.js"></script>

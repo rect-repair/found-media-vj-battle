@@ -1,6 +1,6 @@
 # FOUND VIDEO VJ BATTLE ROYALE — Archive
 
-Flat, pixel-style archive of the offline VJ battle (venue UI inspired by Tetris Battle).
+archive of the offline VJ battle.
 
 ## Run locally
 
@@ -10,6 +10,10 @@ python3 -m http.server 8080
 ```
 
 Open http://localhost:8080
+
+## Fonts
+
+Diary panels and the about modal use **DotGothic16**; HUD chrome uses **Press Start 2P**. Both load from Google Fonts (see `index.html`).
 
 ## Add diary text
 
